@@ -4,16 +4,20 @@
 class Node{
     private:
         int value;
-        Node* next;
-
 
     public:
         Node();
         Node(int value);
-        Node(int value, Node* next);
 
         int getValue();
   
+};
+
+class SingleLinkNode: public Node{
+    private:
+        Node* next;
+    public:
+        SingleLinkNode(int value, Node* next);
 };
 
 #endif
