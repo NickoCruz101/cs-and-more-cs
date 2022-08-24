@@ -9,6 +9,8 @@ class LinkedList{
         LinkedList(Node* head){
             this->head = head;
         }
+
+        void delete_Node(Node* );
 };
 
 
