@@ -6,11 +6,9 @@ class LinkedList{
     private:
         Node* head;
     public:
-        LinkedList(Node* head){
-            this->head = head;
-        }
-
-        void delete_Node(Node* );
+        LinkedList(Node* head);
+        
+        void delete_Node(Node* n);
 };
 
 

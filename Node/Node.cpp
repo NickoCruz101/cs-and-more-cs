@@ -5,14 +5,11 @@
 Node::Node(){
     this->value = NULL;
 }
-Node::Node(int value){
+Node::Node(int value,Node* next){
     this->value = value;
+    this->next = next;
 }
 
 int Node::getValue(){
     return this->value;
-}
-
-SingleLinkNode::SingleLinkNode(int value, Node* next): Node(value){
-    this->next = next;
 }
