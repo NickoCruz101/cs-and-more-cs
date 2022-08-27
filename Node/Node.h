@@ -2,11 +2,11 @@
 #define NODE_H
 
 class Node{
-    private:
-        int value;
-        Node* next;
 
     public:
+        int value;
+        Node* next;
+        
         Node();
         Node(int value, Node* next);
 
