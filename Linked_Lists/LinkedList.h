@@ -5,11 +5,16 @@
 
 class LinkedList{
     private:
-        Node* head;
+        Node* head = nullptr;
+        int List_size = 1;
     public:
         LinkedList(Node* head);
 
         void delete_Node(Node* n);
+
+        void append(Node* n);
+
+        void insert(int index, Node* node);
 };
 
 
