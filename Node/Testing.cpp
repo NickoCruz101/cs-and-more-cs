@@ -9,7 +9,4 @@ int main(){
     
     cout<< n->getValue();
 
-    
-    
-
 }
