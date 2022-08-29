@@ -1,11 +1,16 @@
 #ifndef __NODE_H__
 #define __NODE_H__
 
-#define NULL 0
+
+
+#include<iostream>
+using std::cout; using std::endl;
+
+
 class Node{
 
     public:
-        int value = NULL;
+        int value = 0;
         Node* next = nullptr;
         
         Node();
