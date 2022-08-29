@@ -5,7 +5,7 @@ LinkedList::LinkedList(Node* head){
 }
 
 // Don't pass tail node in
-void LinkedList::delete_Node(Node* n){
+void LinkedList::delete_this(Node* n){
     n->value = n->next->value;
     n->next = n->next->next;
 }
