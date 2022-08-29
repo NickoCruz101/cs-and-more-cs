@@ -36,3 +36,18 @@ void LinkedList::insert(int index, Node* node){
         }
     }
 }
+
+
+void LinkedList::print(){
+    Node* iter = this->head;
+
+    while(iter != nullptr){
+        if(iter->next == nullptr){
+            cout<< "[ " << iter->getValue() << " ]" << endl;
+            break;
+        }
+        cout<< "[ " << iter->getValue() << " ]" << "-> ";
+        iter = iter->next;
+
+    }
+}

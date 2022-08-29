@@ -1,6 +1,5 @@
-#include "../Node/Node.h"
-#include "../Linked_Lists/LinkedList.h"
-#include <iostream>
+#include "Node/Node.h"
+#include "Linked_Lists/LinkedList.h"
 
 
 int main(){
@@ -9,6 +8,8 @@ int main(){
     Node* n0 = new Node(10, n1);
 
     LinkedList linked_list(n0);
+
+    linked_list.print();
 
 
 }
