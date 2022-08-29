@@ -10,7 +10,7 @@ class LinkedList{
     public:
         LinkedList(Node* head);
 
-        void delete_Node(Node* n);
+        void delete_this(Node* n);
 
         void append(Node* n);
 
