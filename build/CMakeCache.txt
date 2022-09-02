@@ -146,7 +146,7 @@ CMAKE_PROJECT_DESCRIPTION:STATIC=
 CMAKE_PROJECT_HOMEPAGE_URL:STATIC=
 
 //Value Computed by CMake
-CMAKE_PROJECT_NAME:STATIC=LinkedList
+CMAKE_PROJECT_NAME:STATIC=Project
 
 //Path to a program.
 CMAKE_RANLIB:FILEPATH=/Library/Developer/CommandLineTools/usr/bin/ranlib
@@ -218,6 +218,15 @@ LinkedList_IS_TOP_LEVEL:STATIC=ON
 
 //Value Computed by CMake
 LinkedList_SOURCE_DIR:STATIC=/Users/nickocruz/Developer/GitHub/cs-and-more-cs
+
+//Value Computed by CMake
+Project_BINARY_DIR:STATIC=/Users/nickocruz/Developer/GitHub/cs-and-more-cs/build
+
+//Value Computed by CMake
+Project_IS_TOP_LEVEL:STATIC=ON
+
+//Value Computed by CMake
+Project_SOURCE_DIR:STATIC=/Users/nickocruz/Developer/GitHub/cs-and-more-cs
 
 //Value Computed by CMake
 test_BINARY_DIR:STATIC=/Users/nickocruz/Developer/GitHub/cs-and-more-cs/build

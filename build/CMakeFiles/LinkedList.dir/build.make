@@ -83,17 +83,49 @@ CMakeFiles/LinkedList.dir/main.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/LinkedList.dir/main.cpp.s"
 	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/nickocruz/Developer/GitHub/cs-and-more-cs/main.cpp -o CMakeFiles/LinkedList.dir/main.cpp.s
 
+CMakeFiles/LinkedList.dir/Node/Node.cpp.o: CMakeFiles/LinkedList.dir/flags.make
+CMakeFiles/LinkedList.dir/Node/Node.cpp.o: /Users/nickocruz/Developer/GitHub/cs-and-more-cs/Node/Node.cpp
+CMakeFiles/LinkedList.dir/Node/Node.cpp.o: CMakeFiles/LinkedList.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/nickocruz/Developer/GitHub/cs-and-more-cs/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building CXX object CMakeFiles/LinkedList.dir/Node/Node.cpp.o"
+	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/LinkedList.dir/Node/Node.cpp.o -MF CMakeFiles/LinkedList.dir/Node/Node.cpp.o.d -o CMakeFiles/LinkedList.dir/Node/Node.cpp.o -c /Users/nickocruz/Developer/GitHub/cs-and-more-cs/Node/Node.cpp
+
+CMakeFiles/LinkedList.dir/Node/Node.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/LinkedList.dir/Node/Node.cpp.i"
+	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/nickocruz/Developer/GitHub/cs-and-more-cs/Node/Node.cpp > CMakeFiles/LinkedList.dir/Node/Node.cpp.i
+
+CMakeFiles/LinkedList.dir/Node/Node.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/LinkedList.dir/Node/Node.cpp.s"
+	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/nickocruz/Developer/GitHub/cs-and-more-cs/Node/Node.cpp -o CMakeFiles/LinkedList.dir/Node/Node.cpp.s
+
+CMakeFiles/LinkedList.dir/Linked_Lists/LinkedList.cpp.o: CMakeFiles/LinkedList.dir/flags.make
+CMakeFiles/LinkedList.dir/Linked_Lists/LinkedList.cpp.o: /Users/nickocruz/Developer/GitHub/cs-and-more-cs/Linked_Lists/LinkedList.cpp
+CMakeFiles/LinkedList.dir/Linked_Lists/LinkedList.cpp.o: CMakeFiles/LinkedList.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/nickocruz/Developer/GitHub/cs-and-more-cs/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building CXX object CMakeFiles/LinkedList.dir/Linked_Lists/LinkedList.cpp.o"
+	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/LinkedList.dir/Linked_Lists/LinkedList.cpp.o -MF CMakeFiles/LinkedList.dir/Linked_Lists/LinkedList.cpp.o.d -o CMakeFiles/LinkedList.dir/Linked_Lists/LinkedList.cpp.o -c /Users/nickocruz/Developer/GitHub/cs-and-more-cs/Linked_Lists/LinkedList.cpp
+
+CMakeFiles/LinkedList.dir/Linked_Lists/LinkedList.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/LinkedList.dir/Linked_Lists/LinkedList.cpp.i"
+	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/nickocruz/Developer/GitHub/cs-and-more-cs/Linked_Lists/LinkedList.cpp > CMakeFiles/LinkedList.dir/Linked_Lists/LinkedList.cpp.i
+
+CMakeFiles/LinkedList.dir/Linked_Lists/LinkedList.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/LinkedList.dir/Linked_Lists/LinkedList.cpp.s"
+	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/nickocruz/Developer/GitHub/cs-and-more-cs/Linked_Lists/LinkedList.cpp -o CMakeFiles/LinkedList.dir/Linked_Lists/LinkedList.cpp.s
+
 # Object files for target LinkedList
 LinkedList_OBJECTS = \
-"CMakeFiles/LinkedList.dir/main.cpp.o"
+"CMakeFiles/LinkedList.dir/main.cpp.o" \
+"CMakeFiles/LinkedList.dir/Node/Node.cpp.o" \
+"CMakeFiles/LinkedList.dir/Linked_Lists/LinkedList.cpp.o"
 
 # External object files for target LinkedList
 LinkedList_EXTERNAL_OBJECTS =
 
 LinkedList: CMakeFiles/LinkedList.dir/main.cpp.o
+LinkedList: CMakeFiles/LinkedList.dir/Node/Node.cpp.o
+LinkedList: CMakeFiles/LinkedList.dir/Linked_Lists/LinkedList.cpp.o
 LinkedList: CMakeFiles/LinkedList.dir/build.make
 LinkedList: CMakeFiles/LinkedList.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/Users/nickocruz/Developer/GitHub/cs-and-more-cs/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Linking CXX executable LinkedList"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/Users/nickocruz/Developer/GitHub/cs-and-more-cs/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Linking CXX executable LinkedList"
 	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/LinkedList.dir/link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.

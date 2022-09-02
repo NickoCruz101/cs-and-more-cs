@@ -129,6 +129,54 @@ LinkedList/fast:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/LinkedList.dir/build.make CMakeFiles/LinkedList.dir/build
 .PHONY : LinkedList/fast
 
+Linked_Lists/LinkedList.o: Linked_Lists/LinkedList.cpp.o
+.PHONY : Linked_Lists/LinkedList.o
+
+# target to build an object file
+Linked_Lists/LinkedList.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/LinkedList.dir/build.make CMakeFiles/LinkedList.dir/Linked_Lists/LinkedList.cpp.o
+.PHONY : Linked_Lists/LinkedList.cpp.o
+
+Linked_Lists/LinkedList.i: Linked_Lists/LinkedList.cpp.i
+.PHONY : Linked_Lists/LinkedList.i
+
+# target to preprocess a source file
+Linked_Lists/LinkedList.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/LinkedList.dir/build.make CMakeFiles/LinkedList.dir/Linked_Lists/LinkedList.cpp.i
+.PHONY : Linked_Lists/LinkedList.cpp.i
+
+Linked_Lists/LinkedList.s: Linked_Lists/LinkedList.cpp.s
+.PHONY : Linked_Lists/LinkedList.s
+
+# target to generate assembly for a file
+Linked_Lists/LinkedList.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/LinkedList.dir/build.make CMakeFiles/LinkedList.dir/Linked_Lists/LinkedList.cpp.s
+.PHONY : Linked_Lists/LinkedList.cpp.s
+
+Node/Node.o: Node/Node.cpp.o
+.PHONY : Node/Node.o
+
+# target to build an object file
+Node/Node.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/LinkedList.dir/build.make CMakeFiles/LinkedList.dir/Node/Node.cpp.o
+.PHONY : Node/Node.cpp.o
+
+Node/Node.i: Node/Node.cpp.i
+.PHONY : Node/Node.i
+
+# target to preprocess a source file
+Node/Node.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/LinkedList.dir/build.make CMakeFiles/LinkedList.dir/Node/Node.cpp.i
+.PHONY : Node/Node.cpp.i
+
+Node/Node.s: Node/Node.cpp.s
+.PHONY : Node/Node.s
+
+# target to generate assembly for a file
+Node/Node.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/LinkedList.dir/build.make CMakeFiles/LinkedList.dir/Node/Node.cpp.s
+.PHONY : Node/Node.cpp.s
+
 main.o: main.cpp.o
 .PHONY : main.o
 
@@ -162,6 +210,12 @@ help:
 	@echo "... edit_cache"
 	@echo "... rebuild_cache"
 	@echo "... LinkedList"
+	@echo "... Linked_Lists/LinkedList.o"
+	@echo "... Linked_Lists/LinkedList.i"
+	@echo "... Linked_Lists/LinkedList.s"
+	@echo "... Node/Node.o"
+	@echo "... Node/Node.i"
+	@echo "... Node/Node.s"
 	@echo "... main.o"
 	@echo "... main.i"
 	@echo "... main.s"
