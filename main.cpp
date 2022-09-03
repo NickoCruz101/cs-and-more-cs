@@ -11,5 +11,9 @@ int main(){
 
     linked_list.print();
 
+    linked_list.delete_this(n1);
+
+    linked_list.print();
+
 
 }
