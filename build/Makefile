@@ -239,53 +239,53 @@ gtest_main/fast:
 	$(MAKE) $(MAKESILENT) -f googletest/googletest/CMakeFiles/gtest_main.dir/build.make googletest/googletest/CMakeFiles/gtest_main.dir/build
 .PHONY : gtest_main/fast
 
-Linked_Lists/LinkedList.o: Linked_Lists/LinkedList.cpp.o
-.PHONY : Linked_Lists/LinkedList.o
+LinkedList.o: LinkedList.cpp.o
+.PHONY : LinkedList.o
 
 # target to build an object file
-Linked_Lists/LinkedList.cpp.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/LinkedList.dir/build.make CMakeFiles/LinkedList.dir/Linked_Lists/LinkedList.cpp.o
-.PHONY : Linked_Lists/LinkedList.cpp.o
+LinkedList.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/LinkedList.dir/build.make CMakeFiles/LinkedList.dir/LinkedList.cpp.o
+.PHONY : LinkedList.cpp.o
 
-Linked_Lists/LinkedList.i: Linked_Lists/LinkedList.cpp.i
-.PHONY : Linked_Lists/LinkedList.i
+LinkedList.i: LinkedList.cpp.i
+.PHONY : LinkedList.i
 
 # target to preprocess a source file
-Linked_Lists/LinkedList.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/LinkedList.dir/build.make CMakeFiles/LinkedList.dir/Linked_Lists/LinkedList.cpp.i
-.PHONY : Linked_Lists/LinkedList.cpp.i
+LinkedList.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/LinkedList.dir/build.make CMakeFiles/LinkedList.dir/LinkedList.cpp.i
+.PHONY : LinkedList.cpp.i
 
-Linked_Lists/LinkedList.s: Linked_Lists/LinkedList.cpp.s
-.PHONY : Linked_Lists/LinkedList.s
+LinkedList.s: LinkedList.cpp.s
+.PHONY : LinkedList.s
 
 # target to generate assembly for a file
-Linked_Lists/LinkedList.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/LinkedList.dir/build.make CMakeFiles/LinkedList.dir/Linked_Lists/LinkedList.cpp.s
-.PHONY : Linked_Lists/LinkedList.cpp.s
+LinkedList.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/LinkedList.dir/build.make CMakeFiles/LinkedList.dir/LinkedList.cpp.s
+.PHONY : LinkedList.cpp.s
 
-Node/Node.o: Node/Node.cpp.o
-.PHONY : Node/Node.o
+Node.o: Node.cpp.o
+.PHONY : Node.o
 
 # target to build an object file
-Node/Node.cpp.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/LinkedList.dir/build.make CMakeFiles/LinkedList.dir/Node/Node.cpp.o
-.PHONY : Node/Node.cpp.o
+Node.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/LinkedList.dir/build.make CMakeFiles/LinkedList.dir/Node.cpp.o
+.PHONY : Node.cpp.o
 
-Node/Node.i: Node/Node.cpp.i
-.PHONY : Node/Node.i
+Node.i: Node.cpp.i
+.PHONY : Node.i
 
 # target to preprocess a source file
-Node/Node.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/LinkedList.dir/build.make CMakeFiles/LinkedList.dir/Node/Node.cpp.i
-.PHONY : Node/Node.cpp.i
+Node.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/LinkedList.dir/build.make CMakeFiles/LinkedList.dir/Node.cpp.i
+.PHONY : Node.cpp.i
 
-Node/Node.s: Node/Node.cpp.s
-.PHONY : Node/Node.s
+Node.s: Node.cpp.s
+.PHONY : Node.s
 
 # target to generate assembly for a file
-Node/Node.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/LinkedList.dir/build.make CMakeFiles/LinkedList.dir/Node/Node.cpp.s
-.PHONY : Node/Node.cpp.s
+Node.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/LinkedList.dir/build.make CMakeFiles/LinkedList.dir/Node.cpp.s
+.PHONY : Node.cpp.s
 
 # target to build an object file
 cmake_pch_arm64.hxx.pch:
@@ -368,12 +368,12 @@ help:
 	@echo "... gtest"
 	@echo "... gtest_main"
 	@echo "... test"
-	@echo "... Linked_Lists/LinkedList.o"
-	@echo "... Linked_Lists/LinkedList.i"
-	@echo "... Linked_Lists/LinkedList.s"
-	@echo "... Node/Node.o"
-	@echo "... Node/Node.i"
-	@echo "... Node/Node.s"
+	@echo "... LinkedList.o"
+	@echo "... LinkedList.i"
+	@echo "... LinkedList.s"
+	@echo "... Node.o"
+	@echo "... Node.i"
+	@echo "... Node.s"
 	@echo "... cmake_pch_arm64.hxx.pch"
 	@echo "... cmake_pch_arm64.hxx.i"
 	@echo "... cmake_pch_arm64.hxx.s"

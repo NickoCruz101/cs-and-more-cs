@@ -1,5 +1,5 @@
 #include "Node/Node.h"
-#include "Linked_Lists/LinkedList.h"
+#include "Linked_List/LinkedList.h"
 
 
 int main(){

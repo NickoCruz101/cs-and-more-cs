@@ -9,7 +9,7 @@ endif()
 
 ADD_SUBDIRECTORY(googletest)
 
-ADD_EXECUTABLE(LinkedList main.cpp Node/Node.cpp Linked_Lists/LinkedList.cpp)
+ADD_EXECUTABLE(LinkedList main.cpp Node.cpp LinkedList.cpp)
 
 ADD_EXECUTABLE(test unit_test.cpp)
 
