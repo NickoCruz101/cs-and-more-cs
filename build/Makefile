@@ -85,6 +85,51 @@ rebuild_cache:
 rebuild_cache/fast: rebuild_cache
 .PHONY : rebuild_cache/fast
 
+# Special rule for the target list_install_components
+list_install_components:
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Available install components are: \"Unspecified\""
+.PHONY : list_install_components
+
+# Special rule for the target list_install_components
+list_install_components/fast: list_install_components
+.PHONY : list_install_components/fast
+
+# Special rule for the target install
+install: preinstall
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Install the project..."
+	/opt/homebrew/Cellar/cmake/3.24.1/bin/cmake -P cmake_install.cmake
+.PHONY : install
+
+# Special rule for the target install
+install/fast: preinstall/fast
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Install the project..."
+	/opt/homebrew/Cellar/cmake/3.24.1/bin/cmake -P cmake_install.cmake
+.PHONY : install/fast
+
+# Special rule for the target install/local
+install/local: preinstall
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Installing only the local directory..."
+	/opt/homebrew/Cellar/cmake/3.24.1/bin/cmake -DCMAKE_INSTALL_LOCAL_ONLY=1 -P cmake_install.cmake
+.PHONY : install/local
+
+# Special rule for the target install/local
+install/local/fast: preinstall/fast
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Installing only the local directory..."
+	/opt/homebrew/Cellar/cmake/3.24.1/bin/cmake -DCMAKE_INSTALL_LOCAL_ONLY=1 -P cmake_install.cmake
+.PHONY : install/local/fast
+
+# Special rule for the target install/strip
+install/strip: preinstall
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Installing the project stripped..."
+	/opt/homebrew/Cellar/cmake/3.24.1/bin/cmake -DCMAKE_INSTALL_DO_STRIP=1 -P cmake_install.cmake
+.PHONY : install/strip
+
+# Special rule for the target install/strip
+install/strip/fast: preinstall/fast
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Installing the project stripped..."
+	/opt/homebrew/Cellar/cmake/3.24.1/bin/cmake -DCMAKE_INSTALL_DO_STRIP=1 -P cmake_install.cmake
+.PHONY : install/strip/fast
+
 # The main all target
 all: cmake_check_build_system
 	$(CMAKE_COMMAND) -E cmake_progress_start /Users/nickocruz/Developer/GitHub/cs-and-more-cs/build/CMakeFiles /Users/nickocruz/Developer/GitHub/cs-and-more-cs/build//CMakeFiles/progress.marks
@@ -117,48 +162,117 @@ depend:
 .PHONY : depend
 
 #=============================================================================
-# Target rules for targets named LinkedList
+# Target rules for targets named main
 
 # Build rule for target.
-LinkedList: cmake_check_build_system
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 LinkedList
-.PHONY : LinkedList
+main: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 main
+.PHONY : main
 
 # fast build rule for target.
-LinkedList/fast:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/LinkedList.dir/build.make CMakeFiles/LinkedList.dir/build
-.PHONY : LinkedList/fast
+main/fast:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/build
+.PHONY : main/fast
 
-Linked_Lists/LinkedList.o: Linked_Lists/LinkedList.cpp.o
-.PHONY : Linked_Lists/LinkedList.o
+#=============================================================================
+# Target rules for targets named test
+
+# Build rule for target.
+test: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 test
+.PHONY : test
+
+# fast build rule for target.
+test/fast:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/test.dir/build.make CMakeFiles/test.dir/build
+.PHONY : test/fast
+
+#=============================================================================
+# Target rules for targets named gmock
+
+# Build rule for target.
+gmock: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 gmock
+.PHONY : gmock
+
+# fast build rule for target.
+gmock/fast:
+	$(MAKE) $(MAKESILENT) -f googletest/googlemock/CMakeFiles/gmock.dir/build.make googletest/googlemock/CMakeFiles/gmock.dir/build
+.PHONY : gmock/fast
+
+#=============================================================================
+# Target rules for targets named gmock_main
+
+# Build rule for target.
+gmock_main: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 gmock_main
+.PHONY : gmock_main
+
+# fast build rule for target.
+gmock_main/fast:
+	$(MAKE) $(MAKESILENT) -f googletest/googlemock/CMakeFiles/gmock_main.dir/build.make googletest/googlemock/CMakeFiles/gmock_main.dir/build
+.PHONY : gmock_main/fast
+
+#=============================================================================
+# Target rules for targets named gtest
+
+# Build rule for target.
+gtest: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 gtest
+.PHONY : gtest
+
+# fast build rule for target.
+gtest/fast:
+	$(MAKE) $(MAKESILENT) -f googletest/googletest/CMakeFiles/gtest.dir/build.make googletest/googletest/CMakeFiles/gtest.dir/build
+.PHONY : gtest/fast
+
+#=============================================================================
+# Target rules for targets named gtest_main
+
+# Build rule for target.
+gtest_main: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 gtest_main
+.PHONY : gtest_main
+
+# fast build rule for target.
+gtest_main/fast:
+	$(MAKE) $(MAKESILENT) -f googletest/googletest/CMakeFiles/gtest_main.dir/build.make googletest/googletest/CMakeFiles/gtest_main.dir/build
+.PHONY : gtest_main/fast
+
+Linked_List/LinkedList.o: Linked_List/LinkedList.cpp.o
+.PHONY : Linked_List/LinkedList.o
 
 # target to build an object file
-Linked_Lists/LinkedList.cpp.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/LinkedList.dir/build.make CMakeFiles/LinkedList.dir/Linked_Lists/LinkedList.cpp.o
-.PHONY : Linked_Lists/LinkedList.cpp.o
+Linked_List/LinkedList.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/Linked_List/LinkedList.cpp.o
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/test.dir/build.make CMakeFiles/test.dir/Linked_List/LinkedList.cpp.o
+.PHONY : Linked_List/LinkedList.cpp.o
 
-Linked_Lists/LinkedList.i: Linked_Lists/LinkedList.cpp.i
-.PHONY : Linked_Lists/LinkedList.i
+Linked_List/LinkedList.i: Linked_List/LinkedList.cpp.i
+.PHONY : Linked_List/LinkedList.i
 
 # target to preprocess a source file
-Linked_Lists/LinkedList.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/LinkedList.dir/build.make CMakeFiles/LinkedList.dir/Linked_Lists/LinkedList.cpp.i
-.PHONY : Linked_Lists/LinkedList.cpp.i
+Linked_List/LinkedList.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/Linked_List/LinkedList.cpp.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/test.dir/build.make CMakeFiles/test.dir/Linked_List/LinkedList.cpp.i
+.PHONY : Linked_List/LinkedList.cpp.i
 
-Linked_Lists/LinkedList.s: Linked_Lists/LinkedList.cpp.s
-.PHONY : Linked_Lists/LinkedList.s
+Linked_List/LinkedList.s: Linked_List/LinkedList.cpp.s
+.PHONY : Linked_List/LinkedList.s
 
 # target to generate assembly for a file
-Linked_Lists/LinkedList.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/LinkedList.dir/build.make CMakeFiles/LinkedList.dir/Linked_Lists/LinkedList.cpp.s
-.PHONY : Linked_Lists/LinkedList.cpp.s
+Linked_List/LinkedList.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/Linked_List/LinkedList.cpp.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/test.dir/build.make CMakeFiles/test.dir/Linked_List/LinkedList.cpp.s
+.PHONY : Linked_List/LinkedList.cpp.s
 
 Node/Node.o: Node/Node.cpp.o
 .PHONY : Node/Node.o
 
 # target to build an object file
 Node/Node.cpp.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/LinkedList.dir/build.make CMakeFiles/LinkedList.dir/Node/Node.cpp.o
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/Node/Node.cpp.o
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/test.dir/build.make CMakeFiles/test.dir/Node/Node.cpp.o
 .PHONY : Node/Node.cpp.o
 
 Node/Node.i: Node/Node.cpp.i
@@ -166,7 +280,8 @@ Node/Node.i: Node/Node.cpp.i
 
 # target to preprocess a source file
 Node/Node.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/LinkedList.dir/build.make CMakeFiles/LinkedList.dir/Node/Node.cpp.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/Node/Node.cpp.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/test.dir/build.make CMakeFiles/test.dir/Node/Node.cpp.i
 .PHONY : Node/Node.cpp.i
 
 Node/Node.s: Node/Node.cpp.s
@@ -174,15 +289,31 @@ Node/Node.s: Node/Node.cpp.s
 
 # target to generate assembly for a file
 Node/Node.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/LinkedList.dir/build.make CMakeFiles/LinkedList.dir/Node/Node.cpp.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/Node/Node.cpp.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/test.dir/build.make CMakeFiles/test.dir/Node/Node.cpp.s
 .PHONY : Node/Node.cpp.s
+
+# target to build an object file
+cmake_pch_arm64.hxx.pch:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/test.dir/build.make CMakeFiles/test.dir/cmake_pch_arm64.hxx.pch
+.PHONY : cmake_pch_arm64.hxx.pch
+
+# target to preprocess a source file
+cmake_pch_arm64.hxx.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/test.dir/build.make CMakeFiles/test.dir/cmake_pch_arm64.hxx.i
+.PHONY : cmake_pch_arm64.hxx.i
+
+# target to generate assembly for a file
+cmake_pch_arm64.hxx.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/test.dir/build.make CMakeFiles/test.dir/cmake_pch_arm64.hxx.s
+.PHONY : cmake_pch_arm64.hxx.s
 
 main.o: main.cpp.o
 .PHONY : main.o
 
 # target to build an object file
 main.cpp.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/LinkedList.dir/build.make CMakeFiles/LinkedList.dir/main.cpp.o
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/main.cpp.o
 .PHONY : main.cpp.o
 
 main.i: main.cpp.i
@@ -190,7 +321,7 @@ main.i: main.cpp.i
 
 # target to preprocess a source file
 main.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/LinkedList.dir/build.make CMakeFiles/LinkedList.dir/main.cpp.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/main.cpp.i
 .PHONY : main.cpp.i
 
 main.s: main.cpp.s
@@ -198,8 +329,32 @@ main.s: main.cpp.s
 
 # target to generate assembly for a file
 main.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/LinkedList.dir/build.make CMakeFiles/LinkedList.dir/main.cpp.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/main.cpp.s
 .PHONY : main.cpp.s
+
+unit_test.o: unit_test.cpp.o
+.PHONY : unit_test.o
+
+# target to build an object file
+unit_test.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/test.dir/build.make CMakeFiles/test.dir/unit_test.cpp.o
+.PHONY : unit_test.cpp.o
+
+unit_test.i: unit_test.cpp.i
+.PHONY : unit_test.i
+
+# target to preprocess a source file
+unit_test.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/test.dir/build.make CMakeFiles/test.dir/unit_test.cpp.i
+.PHONY : unit_test.cpp.i
+
+unit_test.s: unit_test.cpp.s
+.PHONY : unit_test.s
+
+# target to generate assembly for a file
+unit_test.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/test.dir/build.make CMakeFiles/test.dir/unit_test.cpp.s
+.PHONY : unit_test.cpp.s
 
 # Help Target
 help:
@@ -208,17 +363,32 @@ help:
 	@echo "... clean"
 	@echo "... depend"
 	@echo "... edit_cache"
+	@echo "... install"
+	@echo "... install/local"
+	@echo "... install/strip"
+	@echo "... list_install_components"
 	@echo "... rebuild_cache"
-	@echo "... LinkedList"
-	@echo "... Linked_Lists/LinkedList.o"
-	@echo "... Linked_Lists/LinkedList.i"
-	@echo "... Linked_Lists/LinkedList.s"
+	@echo "... gmock"
+	@echo "... gmock_main"
+	@echo "... gtest"
+	@echo "... gtest_main"
+	@echo "... main"
+	@echo "... test"
+	@echo "... Linked_List/LinkedList.o"
+	@echo "... Linked_List/LinkedList.i"
+	@echo "... Linked_List/LinkedList.s"
 	@echo "... Node/Node.o"
 	@echo "... Node/Node.i"
 	@echo "... Node/Node.s"
+	@echo "... cmake_pch_arm64.hxx.pch"
+	@echo "... cmake_pch_arm64.hxx.i"
+	@echo "... cmake_pch_arm64.hxx.s"
 	@echo "... main.o"
 	@echo "... main.i"
 	@echo "... main.s"
+	@echo "... unit_test.o"
+	@echo "... unit_test.i"
+	@echo "... unit_test.s"
 .PHONY : help
 
 
