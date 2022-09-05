@@ -470,5 +470,6 @@ CMakeFiles/test.dir/unit_test.cpp.o: \
   /Users/nickocruz/Developer/GitHub/cs-and-more-cs/googletest/googletest/include/gtest/gtest_prod.h \
   /Users/nickocruz/Developer/GitHub/cs-and-more-cs/unit_test.cpp \
   /Users/nickocruz/Developer/GitHub/cs-and-more-cs/Testing.h \
-  /Users/nickocruz/Developer/GitHub/cs-and-more-cs/Node.h \
-  /Users/nickocruz/Developer/GitHub/cs-and-more-cs/LinkedList.h
+  /Users/nickocruz/Developer/GitHub/cs-and-more-cs/Node/Node.h \
+  /Users/nickocruz/Developer/GitHub/cs-and-more-cs/Linked_List/LinkedList.h \
+  /Users/nickocruz/Developer/GitHub/cs-and-more-cs/Linked_List/../Node/Node.h

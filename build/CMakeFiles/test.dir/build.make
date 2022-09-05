@@ -84,12 +84,44 @@ CMakeFiles/test.dir/cmake_pch_arm64.hxx.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/test.dir/cmake_pch_arm64.hxx.s"
 	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGSarm64) -Winvalid-pch -Xclang -emit-pch -Xclang -include -Xclang /Users/nickocruz/Developer/GitHub/cs-and-more-cs/build/CMakeFiles/test.dir/cmake_pch_arm64.hxx -x c++-header -S /Users/nickocruz/Developer/GitHub/cs-and-more-cs/build/CMakeFiles/test.dir/cmake_pch_arm64.hxx.cxx -o CMakeFiles/test.dir/cmake_pch_arm64.hxx.s
 
+CMakeFiles/test.dir/Node/Node.cpp.o: CMakeFiles/test.dir/flags.make
+CMakeFiles/test.dir/Node/Node.cpp.o: /Users/nickocruz/Developer/GitHub/cs-and-more-cs/Node/Node.cpp
+CMakeFiles/test.dir/Node/Node.cpp.o: CMakeFiles/test.dir/cmake_pch_arm64.hxx
+CMakeFiles/test.dir/Node/Node.cpp.o: CMakeFiles/test.dir/cmake_pch_arm64.hxx.pch
+CMakeFiles/test.dir/Node/Node.cpp.o: CMakeFiles/test.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/nickocruz/Developer/GitHub/cs-and-more-cs/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building CXX object CMakeFiles/test.dir/Node/Node.cpp.o"
+	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -Winvalid-pch -Xarch_arm64 -include/Users/nickocruz/Developer/GitHub/cs-and-more-cs/build/CMakeFiles/test.dir/cmake_pch_arm64.hxx -MD -MT CMakeFiles/test.dir/Node/Node.cpp.o -MF CMakeFiles/test.dir/Node/Node.cpp.o.d -o CMakeFiles/test.dir/Node/Node.cpp.o -c /Users/nickocruz/Developer/GitHub/cs-and-more-cs/Node/Node.cpp
+
+CMakeFiles/test.dir/Node/Node.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/test.dir/Node/Node.cpp.i"
+	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -Winvalid-pch -Xarch_arm64 -include/Users/nickocruz/Developer/GitHub/cs-and-more-cs/build/CMakeFiles/test.dir/cmake_pch_arm64.hxx -E /Users/nickocruz/Developer/GitHub/cs-and-more-cs/Node/Node.cpp > CMakeFiles/test.dir/Node/Node.cpp.i
+
+CMakeFiles/test.dir/Node/Node.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/test.dir/Node/Node.cpp.s"
+	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -Winvalid-pch -Xarch_arm64 -include/Users/nickocruz/Developer/GitHub/cs-and-more-cs/build/CMakeFiles/test.dir/cmake_pch_arm64.hxx -S /Users/nickocruz/Developer/GitHub/cs-and-more-cs/Node/Node.cpp -o CMakeFiles/test.dir/Node/Node.cpp.s
+
+CMakeFiles/test.dir/Linked_List/LinkedList.cpp.o: CMakeFiles/test.dir/flags.make
+CMakeFiles/test.dir/Linked_List/LinkedList.cpp.o: /Users/nickocruz/Developer/GitHub/cs-and-more-cs/Linked_List/LinkedList.cpp
+CMakeFiles/test.dir/Linked_List/LinkedList.cpp.o: CMakeFiles/test.dir/cmake_pch_arm64.hxx
+CMakeFiles/test.dir/Linked_List/LinkedList.cpp.o: CMakeFiles/test.dir/cmake_pch_arm64.hxx.pch
+CMakeFiles/test.dir/Linked_List/LinkedList.cpp.o: CMakeFiles/test.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/nickocruz/Developer/GitHub/cs-and-more-cs/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building CXX object CMakeFiles/test.dir/Linked_List/LinkedList.cpp.o"
+	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -Winvalid-pch -Xarch_arm64 -include/Users/nickocruz/Developer/GitHub/cs-and-more-cs/build/CMakeFiles/test.dir/cmake_pch_arm64.hxx -MD -MT CMakeFiles/test.dir/Linked_List/LinkedList.cpp.o -MF CMakeFiles/test.dir/Linked_List/LinkedList.cpp.o.d -o CMakeFiles/test.dir/Linked_List/LinkedList.cpp.o -c /Users/nickocruz/Developer/GitHub/cs-and-more-cs/Linked_List/LinkedList.cpp
+
+CMakeFiles/test.dir/Linked_List/LinkedList.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/test.dir/Linked_List/LinkedList.cpp.i"
+	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -Winvalid-pch -Xarch_arm64 -include/Users/nickocruz/Developer/GitHub/cs-and-more-cs/build/CMakeFiles/test.dir/cmake_pch_arm64.hxx -E /Users/nickocruz/Developer/GitHub/cs-and-more-cs/Linked_List/LinkedList.cpp > CMakeFiles/test.dir/Linked_List/LinkedList.cpp.i
+
+CMakeFiles/test.dir/Linked_List/LinkedList.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/test.dir/Linked_List/LinkedList.cpp.s"
+	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -Winvalid-pch -Xarch_arm64 -include/Users/nickocruz/Developer/GitHub/cs-and-more-cs/build/CMakeFiles/test.dir/cmake_pch_arm64.hxx -S /Users/nickocruz/Developer/GitHub/cs-and-more-cs/Linked_List/LinkedList.cpp -o CMakeFiles/test.dir/Linked_List/LinkedList.cpp.s
+
 CMakeFiles/test.dir/unit_test.cpp.o: CMakeFiles/test.dir/flags.make
 CMakeFiles/test.dir/unit_test.cpp.o: /Users/nickocruz/Developer/GitHub/cs-and-more-cs/unit_test.cpp
 CMakeFiles/test.dir/unit_test.cpp.o: CMakeFiles/test.dir/cmake_pch_arm64.hxx
 CMakeFiles/test.dir/unit_test.cpp.o: CMakeFiles/test.dir/cmake_pch_arm64.hxx.pch
 CMakeFiles/test.dir/unit_test.cpp.o: CMakeFiles/test.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/nickocruz/Developer/GitHub/cs-and-more-cs/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building CXX object CMakeFiles/test.dir/unit_test.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/nickocruz/Developer/GitHub/cs-and-more-cs/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Building CXX object CMakeFiles/test.dir/unit_test.cpp.o"
 	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -Winvalid-pch -Xarch_arm64 -include/Users/nickocruz/Developer/GitHub/cs-and-more-cs/build/CMakeFiles/test.dir/cmake_pch_arm64.hxx -MD -MT CMakeFiles/test.dir/unit_test.cpp.o -MF CMakeFiles/test.dir/unit_test.cpp.o.d -o CMakeFiles/test.dir/unit_test.cpp.o -c /Users/nickocruz/Developer/GitHub/cs-and-more-cs/unit_test.cpp
 
 CMakeFiles/test.dir/unit_test.cpp.i: cmake_force
@@ -102,17 +134,21 @@ CMakeFiles/test.dir/unit_test.cpp.s: cmake_force
 
 # Object files for target test
 test_OBJECTS = \
+"CMakeFiles/test.dir/Node/Node.cpp.o" \
+"CMakeFiles/test.dir/Linked_List/LinkedList.cpp.o" \
 "CMakeFiles/test.dir/unit_test.cpp.o"
 
 # External object files for target test
 test_EXTERNAL_OBJECTS =
 
 test: CMakeFiles/test.dir/cmake_pch_arm64.hxx.pch
+test: CMakeFiles/test.dir/Node/Node.cpp.o
+test: CMakeFiles/test.dir/Linked_List/LinkedList.cpp.o
 test: CMakeFiles/test.dir/unit_test.cpp.o
 test: CMakeFiles/test.dir/build.make
 test: lib/libgtest.a
 test: CMakeFiles/test.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/Users/nickocruz/Developer/GitHub/cs-and-more-cs/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Linking CXX executable test"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/Users/nickocruz/Developer/GitHub/cs-and-more-cs/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "Linking CXX executable test"
 	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/test.dir/link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.

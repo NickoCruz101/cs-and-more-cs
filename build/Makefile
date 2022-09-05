@@ -162,17 +162,17 @@ depend:
 .PHONY : depend
 
 #=============================================================================
-# Target rules for targets named LinkedList
+# Target rules for targets named main
 
 # Build rule for target.
-LinkedList: cmake_check_build_system
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 LinkedList
-.PHONY : LinkedList
+main: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 main
+.PHONY : main
 
 # fast build rule for target.
-LinkedList/fast:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/LinkedList.dir/build.make CMakeFiles/LinkedList.dir/build
-.PHONY : LinkedList/fast
+main/fast:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/build
+.PHONY : main/fast
 
 #=============================================================================
 # Target rules for targets named test
@@ -239,53 +239,59 @@ gtest_main/fast:
 	$(MAKE) $(MAKESILENT) -f googletest/googletest/CMakeFiles/gtest_main.dir/build.make googletest/googletest/CMakeFiles/gtest_main.dir/build
 .PHONY : gtest_main/fast
 
-LinkedList.o: LinkedList.cpp.o
-.PHONY : LinkedList.o
+Linked_List/LinkedList.o: Linked_List/LinkedList.cpp.o
+.PHONY : Linked_List/LinkedList.o
 
 # target to build an object file
-LinkedList.cpp.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/LinkedList.dir/build.make CMakeFiles/LinkedList.dir/LinkedList.cpp.o
-.PHONY : LinkedList.cpp.o
+Linked_List/LinkedList.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/Linked_List/LinkedList.cpp.o
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/test.dir/build.make CMakeFiles/test.dir/Linked_List/LinkedList.cpp.o
+.PHONY : Linked_List/LinkedList.cpp.o
 
-LinkedList.i: LinkedList.cpp.i
-.PHONY : LinkedList.i
+Linked_List/LinkedList.i: Linked_List/LinkedList.cpp.i
+.PHONY : Linked_List/LinkedList.i
 
 # target to preprocess a source file
-LinkedList.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/LinkedList.dir/build.make CMakeFiles/LinkedList.dir/LinkedList.cpp.i
-.PHONY : LinkedList.cpp.i
+Linked_List/LinkedList.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/Linked_List/LinkedList.cpp.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/test.dir/build.make CMakeFiles/test.dir/Linked_List/LinkedList.cpp.i
+.PHONY : Linked_List/LinkedList.cpp.i
 
-LinkedList.s: LinkedList.cpp.s
-.PHONY : LinkedList.s
+Linked_List/LinkedList.s: Linked_List/LinkedList.cpp.s
+.PHONY : Linked_List/LinkedList.s
 
 # target to generate assembly for a file
-LinkedList.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/LinkedList.dir/build.make CMakeFiles/LinkedList.dir/LinkedList.cpp.s
-.PHONY : LinkedList.cpp.s
+Linked_List/LinkedList.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/Linked_List/LinkedList.cpp.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/test.dir/build.make CMakeFiles/test.dir/Linked_List/LinkedList.cpp.s
+.PHONY : Linked_List/LinkedList.cpp.s
 
-Node.o: Node.cpp.o
-.PHONY : Node.o
+Node/Node.o: Node/Node.cpp.o
+.PHONY : Node/Node.o
 
 # target to build an object file
-Node.cpp.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/LinkedList.dir/build.make CMakeFiles/LinkedList.dir/Node.cpp.o
-.PHONY : Node.cpp.o
+Node/Node.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/Node/Node.cpp.o
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/test.dir/build.make CMakeFiles/test.dir/Node/Node.cpp.o
+.PHONY : Node/Node.cpp.o
 
-Node.i: Node.cpp.i
-.PHONY : Node.i
+Node/Node.i: Node/Node.cpp.i
+.PHONY : Node/Node.i
 
 # target to preprocess a source file
-Node.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/LinkedList.dir/build.make CMakeFiles/LinkedList.dir/Node.cpp.i
-.PHONY : Node.cpp.i
+Node/Node.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/Node/Node.cpp.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/test.dir/build.make CMakeFiles/test.dir/Node/Node.cpp.i
+.PHONY : Node/Node.cpp.i
 
-Node.s: Node.cpp.s
-.PHONY : Node.s
+Node/Node.s: Node/Node.cpp.s
+.PHONY : Node/Node.s
 
 # target to generate assembly for a file
-Node.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/LinkedList.dir/build.make CMakeFiles/LinkedList.dir/Node.cpp.s
-.PHONY : Node.cpp.s
+Node/Node.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/Node/Node.cpp.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/test.dir/build.make CMakeFiles/test.dir/Node/Node.cpp.s
+.PHONY : Node/Node.cpp.s
 
 # target to build an object file
 cmake_pch_arm64.hxx.pch:
@@ -307,7 +313,7 @@ main.o: main.cpp.o
 
 # target to build an object file
 main.cpp.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/LinkedList.dir/build.make CMakeFiles/LinkedList.dir/main.cpp.o
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/main.cpp.o
 .PHONY : main.cpp.o
 
 main.i: main.cpp.i
@@ -315,7 +321,7 @@ main.i: main.cpp.i
 
 # target to preprocess a source file
 main.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/LinkedList.dir/build.make CMakeFiles/LinkedList.dir/main.cpp.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/main.cpp.i
 .PHONY : main.cpp.i
 
 main.s: main.cpp.s
@@ -323,7 +329,7 @@ main.s: main.cpp.s
 
 # target to generate assembly for a file
 main.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/LinkedList.dir/build.make CMakeFiles/LinkedList.dir/main.cpp.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/main.cpp.s
 .PHONY : main.cpp.s
 
 unit_test.o: unit_test.cpp.o
@@ -362,18 +368,18 @@ help:
 	@echo "... install/strip"
 	@echo "... list_install_components"
 	@echo "... rebuild_cache"
-	@echo "... LinkedList"
 	@echo "... gmock"
 	@echo "... gmock_main"
 	@echo "... gtest"
 	@echo "... gtest_main"
+	@echo "... main"
 	@echo "... test"
-	@echo "... LinkedList.o"
-	@echo "... LinkedList.i"
-	@echo "... LinkedList.s"
-	@echo "... Node.o"
-	@echo "... Node.i"
-	@echo "... Node.s"
+	@echo "... Linked_List/LinkedList.o"
+	@echo "... Linked_List/LinkedList.i"
+	@echo "... Linked_List/LinkedList.s"
+	@echo "... Node/Node.o"
+	@echo "... Node/Node.i"
+	@echo "... Node/Node.s"
 	@echo "... cmake_pch_arm64.hxx.pch"
 	@echo "... cmake_pch_arm64.hxx.i"
 	@echo "... cmake_pch_arm64.hxx.s"

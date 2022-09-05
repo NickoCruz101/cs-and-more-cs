@@ -12,5 +12,9 @@ CXX_FLAGS = -O3 -DNDEBUG -arch arm64 -isysroot /Library/Developer/CommandLineToo
 
 # PCH options: CMakeFiles/test.dir/cmake_pch_arm64.hxx.pch_OPTIONS = -Winvalid-pch;-Xclang;-emit-pch;-Xclang;-include;-Xclang;/Users/nickocruz/Developer/GitHub/cs-and-more-cs/build/CMakeFiles/test.dir/cmake_pch_arm64.hxx;-x;c++-header
 
+# PCH options: CMakeFiles/test.dir/Node/Node.cpp.o_OPTIONS = -Winvalid-pch;;-Xarch_arm64;-include/Users/nickocruz/Developer/GitHub/cs-and-more-cs/build/CMakeFiles/test.dir/cmake_pch_arm64.hxx
+
+# PCH options: CMakeFiles/test.dir/Linked_List/LinkedList.cpp.o_OPTIONS = -Winvalid-pch;;-Xarch_arm64;-include/Users/nickocruz/Developer/GitHub/cs-and-more-cs/build/CMakeFiles/test.dir/cmake_pch_arm64.hxx
+
 # PCH options: CMakeFiles/test.dir/unit_test.cpp.o_OPTIONS = -Winvalid-pch;;-Xarch_arm64;-include/Users/nickocruz/Developer/GitHub/cs-and-more-cs/build/CMakeFiles/test.dir/cmake_pch_arm64.hxx
 
