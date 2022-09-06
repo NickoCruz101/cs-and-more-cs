@@ -12,6 +12,10 @@ class Node{
         int value = 0;
         Node* prev = nullptr;
         Node* next = nullptr;
+
+        bool link_status = false;
+        bool double_linked = NULL;
+        bool single_linked = NULL;
         
         Node();
         Node(int value);
@@ -20,6 +24,8 @@ class Node{
         Node(int value, Node* prev, Node* next);
 
         int getValue();
+
+        // bool getLinkStatus();
         
 };
 
