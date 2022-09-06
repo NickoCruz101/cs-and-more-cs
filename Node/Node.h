@@ -20,6 +20,7 @@ class Node{
         Node(int value, Node* prev, Node* next);
 
         int getValue();
+        
 };
 
 
