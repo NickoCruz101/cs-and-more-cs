@@ -2,8 +2,10 @@
 #define __NODE_H__
 
 #include<iostream>
+#include<string>
 
 using std::cout; using std::endl;
+using std::string;
 
 
 class Node{
@@ -24,6 +26,8 @@ class Node{
         Node(int value, Node* prev, Node* next);
 
         int getValue();
+
+        void set(string dir, Node* node);
 
         // bool getLinkStatus();
         

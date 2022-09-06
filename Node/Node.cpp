@@ -22,6 +22,22 @@ int Node::getValue(){
     return this->value;
 }
 
+void Node::set(string dir, Node* node){
+    if(dir == "next" && this->next == nullptr){
+        this->next = node;
+        return;
+    }
+
+    if(dir == "prev" && this->prev == nullptr){
+        this->prev = node;
+        return;
+    }
+
+    cout<< "ERROR set node->"<< dir << "node"<< endl;
+    return;
+    
+}
+
 // bool Node::getLinkStatus(){
 //     if(this->link_status == true){
 //         if(this->double_linked) return true;
