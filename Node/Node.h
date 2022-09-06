@@ -13,9 +13,9 @@ class Node{
         Node* prev = nullptr;
         Node* next = nullptr;
 
-        bool link_status = false;
-        bool double_linked = NULL;
-        bool single_linked = NULL;
+        // bool link_status = false;
+        // bool double_linked = NULL;
+        // bool single_linked = NULL;
         
         Node();
         Node(int value);
