@@ -12,14 +12,14 @@ TEST(NODE_CONSTRUCTOR_TEST, no_arguments){
     EXPECT_EQ(n->next,nullptr);
 }
 
-TEST(NODE_CONSTRUCTOR_TEST, val_argument){
+TEST(NODE_CONSTRUCTOR_TEST, 1_argument){
     Node* n = new Node(10);
 
     EXPECT_EQ(10,n->getValue());
 
 };
 
-TEST(NODE_CONSTRUCTOR_TEST, val_and_Node_arguments){
+TEST(NODE_CONSTRUCTOR_TEST, 2_arguments){
     Node* b = new Node(14);
     Node* a = new Node(22,b);
 
@@ -29,5 +29,24 @@ TEST(NODE_CONSTRUCTOR_TEST, val_and_Node_arguments){
 };
 
 
+TEST(NODE_SETTERS, set_next){
+    Node* a = new Node(1);
+    Node* b = new Node(33);
+
+    a->set("next",b);
+
+    EXPECT_EQ(a->next, b);
+    EXPECT_EQ(a->next->value, b->getValue());
+};
+
+TEST(NODE_SETTERS, set_prev){
+    Node* prev = new Node(22);
+    Node* node = new Node(32);
+
+    node->set("prev",prev);
+
+    EXPECT_EQ(node->prev, prev);
+    EXPECT_EQ(node->prev->value, prev->value);
+}
 
 #endif
