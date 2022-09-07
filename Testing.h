@@ -56,4 +56,11 @@ TEST(LINKEDLIST_CONSTRUCTORS, empty){
 
 }
 
+TEST(LINKEDLIST_CONSTRUCTORS, nonEmpty){
+    Node* h = new Node(57);
+    LinkedList* list = new LinkedList(h);
+
+    EXPECT_EQ(list->getHead(), h);
+}
+
 #endif
