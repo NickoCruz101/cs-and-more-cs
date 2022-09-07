@@ -49,4 +49,11 @@ TEST(NODE_SETTERS, set_prev){
     EXPECT_EQ(node->prev->value, prev->value);
 }
 
+TEST(LINKEDLIST_CONSTRUCTORS, empty){
+    LinkedList* list = new LinkedList();
+
+    EXPECT_EQ(list->getHead(), nullptr);
+
+}
+
 #endif

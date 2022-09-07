@@ -7,11 +7,18 @@ LinkedList::LinkedList(Node* head){
     this->head = head;
 }
 
+Node* LinkedList::getHead(){
+    return this->head;
+}
+
+
 // Don't pass tail node in
 void LinkedList::delete_this(Node* n){
     n->value = n->next->value;
     n->next = n->next->next;
 }
+
+
 
 void LinkedList::append(Node* n){
     

@@ -12,6 +12,8 @@ class LinkedList{
 
         LinkedList(Node* head);
 
+        Node* getHead();
+
         void delete_this(Node* n);
 
         void append(Node* n);
