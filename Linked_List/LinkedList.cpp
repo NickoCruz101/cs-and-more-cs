@@ -1,5 +1,8 @@
 #include "LinkedList.h"
 
+LinkedList::LinkedList(): head(nullptr)
+{ }
+
 LinkedList::LinkedList(Node* head){
     this->head = head;
 }
@@ -39,6 +42,9 @@ void LinkedList::insert(int index, Node* node){
 
 
 void LinkedList::print(){
+    if(this->head == nullptr){
+        cout<<"headless list"<<endl;
+    }
     Node* iter = this->head;
 
     while(iter != nullptr){
