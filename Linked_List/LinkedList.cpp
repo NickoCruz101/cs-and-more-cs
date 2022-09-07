@@ -8,6 +8,10 @@ LinkedList::LinkedList(Node* head){
     this->head = head;
 }
 
+Node* LinkedList::getHead(){
+    return this->head;
+}
+
 int LinkedList::getHeadVal(){
     return this->head->getValue();
 }
