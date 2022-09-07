@@ -12,7 +12,7 @@ class LinkedList{
 
         LinkedList(Node* head);
 
-        Node* getHead();
+        int getHeadVal();
 
         void delete_this(Node* n);
 

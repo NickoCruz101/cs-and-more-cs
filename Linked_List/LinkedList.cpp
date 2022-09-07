@@ -1,14 +1,15 @@
 #include "LinkedList.h"
 
-LinkedList::LinkedList(): head(nullptr)
-{ }
+LinkedList::LinkedList(){
+    this->head = new Node();
+}
 
 LinkedList::LinkedList(Node* head){
     this->head = head;
 }
 
-Node* LinkedList::getHead(){
-    return this->head;
+int LinkedList::getHeadVal(){
+    return this->head->getValue();
 }
 
 
