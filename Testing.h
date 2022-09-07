@@ -52,7 +52,9 @@ TEST(NODE_SETTERS, set_prev){
 TEST(LINKEDLIST_CONSTRUCTORS, empty){
     LinkedList* list = new LinkedList();
 
-    EXPECT_EQ(list->getHead(), nullptr);
+    EXPECT_EQ(list->getHeadVal(), 0);
+
+    //EXPECT_EQ(list->getHead(), nullptr);
 
 }
 
@@ -60,7 +62,8 @@ TEST(LINKEDLIST_CONSTRUCTORS, nonEmpty){
     Node* h = new Node(57);
     LinkedList* list = new LinkedList(h);
 
-    EXPECT_EQ(list->getHead(), h);
+    Node* head = list->getHead();
+    EXPECT_EQ(head->getValue(), 57);
 }
 
 #endif
