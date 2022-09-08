@@ -1,14 +1,29 @@
 #include "LinkedList.h"
 
+LinkedList::LinkedList(){
+    this->head = new Node();
+}
+
 LinkedList::LinkedList(Node* head){
     this->head = head;
 }
+
+Node* LinkedList::getHead(){
+    return this->head;
+}
+
+int LinkedList::getHeadVal(){
+    return this->head->getValue();
+}
+
 
 // Don't pass tail node in
 void LinkedList::delete_this(Node* n){
     n->value = n->next->value;
     n->next = n->next->next;
 }
+
+
 
 void LinkedList::append(Node* n){
     
@@ -39,6 +54,9 @@ void LinkedList::insert(int index, Node* node){
 
 
 void LinkedList::print(){
+    if(this->head == nullptr){
+        cout<<"headless list"<<endl;
+    }
     Node* iter = this->head;
 
     while(iter != nullptr){

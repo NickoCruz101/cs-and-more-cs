@@ -8,7 +8,12 @@ class LinkedList{
         Node* head = nullptr;
         int List_size = 1;
     public:
+        LinkedList();
+
         LinkedList(Node* head);
+
+        Node* getHead();
+        int getHeadVal();
 
         void delete_this(Node* n);
 
