@@ -16,6 +16,21 @@ int LinkedList::getHeadVal(){
     return this->head->getValue();
 }
 
+void LinkedList::updateSize(){
+    Node* curr = this->head;
+    int size = 1;
+
+    while(curr != nullptr){
+        size = size + 1;
+        curr = curr->next;
+    }
+
+    this->list_size = size;
+}
+
+int LinkedList::getSize(){
+    return this->list_size;
+}
 
 // Don't pass tail node in
 void LinkedList::delete_this(Node* n){
@@ -32,7 +47,7 @@ void LinkedList::append(Node* n){
     while(iter){
         if(iter->next == nullptr){
             iter->next = n;
-            this->List_size = this->List_size + 1;
+            this->list_size = this->list_size + 1;
             return;
         }
         iter = iter->next;

@@ -6,14 +6,19 @@
 class LinkedList{
     private:
         Node* head = nullptr;
-        int List_size = 1;
+        int list_size = 1;
     public:
         LinkedList();
 
         LinkedList(Node* head);
 
         Node* getHead();
+
         int getHeadVal();
+        
+        void updateSize();
+        int getSize();
+
 
         void delete_this(Node* n);
         void append(Node* n);
