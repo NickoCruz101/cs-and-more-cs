@@ -18,7 +18,7 @@ int LinkedList::getHeadVal(){
 
 void LinkedList::updateSize(){
     Node* curr = this->head;
-    int size = 1;
+    int size = 0;
 
     while(curr != nullptr){
         size = size + 1;

@@ -6,7 +6,7 @@
 class LinkedList{
     private:
         Node* head = nullptr;
-        int list_size = 1;
+        int list_size = 0;
     public:
         LinkedList();
 
@@ -15,7 +15,7 @@ class LinkedList{
         Node* getHead();
 
         int getHeadVal();
-        
+
         void updateSize();
         int getSize();
 
