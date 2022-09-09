@@ -66,4 +66,20 @@ TEST(LINKEDLIST_CONSTRUCTORS, nonEmpty){
     EXPECT_EQ(head->getValue(), 57);
 }
 
+TEST(LINKEDLIST_Func, updateSize_getSize){
+    Node* h = new Node(57);
+    Node* n1 = new Node(22);
+    Node* n2 = new Node(43);
+    Node* n3 = new Node(34);
+
+    h->set("next",n1);
+    n1->set("next",n2);
+    n2->set("next",n3);
+
+    LinkedList* list = new LinkedList(h);
+    list->updateSize();
+    int size = list->getSize();
+
+    EXPECT_EQ(size, 4);
+}
 #endif
