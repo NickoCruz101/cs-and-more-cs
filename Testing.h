@@ -55,7 +55,6 @@ TEST(LINKEDLIST_CONSTRUCTORS, empty){
     EXPECT_EQ(list->getHeadVal(), 0);
 
     //EXPECT_EQ(list->getHead(), nullptr);
-
 }
 
 TEST(LINKEDLIST_CONSTRUCTORS, nonEmpty){
