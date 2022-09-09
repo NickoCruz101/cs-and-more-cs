@@ -16,11 +16,8 @@ class LinkedList{
         int getHeadVal();
 
         void delete_this(Node* n);
-
         void append(Node* n);
-
         void insert(int index, Node* node);
-
         void print();
 };
 
