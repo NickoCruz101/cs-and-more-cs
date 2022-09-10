@@ -5,6 +5,13 @@
 #include "Linked_List/LinkedList.h"
 #include "gtest/gtest.h"
 
+Node* g_a {new Node(1)};
+Node* g_b {new Node(2)};
+Node* g_c {new Node(3)};
+Node* g_d {new Node(4)};
+Node* head {new Node(33)};
+LinkedList* test_list {new LinkedList(head)};
+
 TEST(NODE_CONSTRUCTOR_TEST, no_arguments){
     Node* n = new Node();
 
@@ -81,5 +88,11 @@ TEST(LINKEDLIST_Func, updateSize_getSize){
     int size = list->getSize();
 
     EXPECT_EQ(size, 4);
+}
+
+TEST(LINKEDLIST_FUNC, global_node){
+    Node* n = new Node(2,g_a);
+
+    EXPECT_EQ(n->next->getValue(),99);
 }
 #endif
