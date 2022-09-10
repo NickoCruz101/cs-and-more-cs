@@ -40,8 +40,7 @@ void LinkedList::delete_this(Node* n){
 
 
 
-void LinkedList::append(Node* n){
-    
+void LinkedList::append(Node* n){ 
     Node* iter = this->head;
 
     while(iter){
@@ -81,6 +80,5 @@ void LinkedList::print(){
         }
         cout<< "[ " << iter->getValue() << " ]" << "-> ";
         iter = iter->next;
-
     }
 }
