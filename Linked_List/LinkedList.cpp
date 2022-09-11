@@ -28,6 +28,10 @@ void LinkedList::updateSize(){
     this->list_size = size;
 }
 
+void LinkedList::create(vector<int> vec){
+    
+}
+
 int LinkedList::getSize(){
     return this->list_size;
 }
