@@ -29,7 +29,13 @@ void LinkedList::updateSize(){
 }
 
 void LinkedList::create(vector<int> vec){
-    
+    this->head = new Node(vec[0]);
+    Node* it = head;
+    for(int i = 1; i < vec.size(); i++){
+        Node* n = new Node(vec[i]);
+        it->next = n;
+        it = it->next;
+    }
 }
 
 int LinkedList::getSize(){
