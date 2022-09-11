@@ -92,6 +92,15 @@ TEST(LINKEDLIST_Func, updateSize_getSize){
 TEST(LINKEDLIST_FUNC, global_node){
     Node* n = new Node(2,g_a);
 
-    EXPECT_EQ(n->next->getValue(),99);
+    EXPECT_EQ(n->next->getValue(),1);
+}
+
+TEST(LINKEDLIST_FUNC, get_size){
+    test_list->print();
+    cout<< test_list->getSize() << endl;
+    test_list->updateSize();
+    int size = test_list->getSize();
+
+    EXPECT_EQ(size,5);
 }
 #endif

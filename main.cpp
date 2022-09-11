@@ -10,8 +10,10 @@ int main(){
     LinkedList linked_list(n0);
 
     linked_list.print();
+    linked_list.updateSize();
 
-    linked_list.delete_this(n1);
+    cout<< linked_list.getSize()<<endl;
+
 
     linked_list.print();
 
