@@ -101,6 +101,6 @@ TEST(LINKEDLIST_FUNC, get_size){
     test_list->updateSize();
     int size = test_list->getSize();
 
-    EXPECT_EQ(size,5);
+    EXPECT_EQ(test_list->getSize(),5);
 }
 #endif
