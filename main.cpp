@@ -17,5 +17,6 @@ int main(){
 
     linked_list.print();
 
+    cout<< "yo" <<endl;
 
 }
