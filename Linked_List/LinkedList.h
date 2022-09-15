@@ -2,6 +2,9 @@
 #define __LINKEDLIST_H__
 
 #include "../Node/Node.h"
+#include <vector>
+
+using std::vector;
 
 class LinkedList{
     private:
@@ -15,6 +18,8 @@ class LinkedList{
         Node* getHead();
 
         int getHeadVal();
+
+        void create(vector<int> );
 
         void updateSize();
         int getSize();
