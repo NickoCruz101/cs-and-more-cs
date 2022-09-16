@@ -11,7 +11,7 @@ ADD_SUBDIRECTORY(googletest)
 
 ADD_EXECUTABLE(main Node/Node.cpp Linked_List/LinkedList.cpp main.cpp)
 
-ADD_EXECUTABLE(test Node/Node.cpp Linked_List/LinkedList.cpp Testing.h unit_test.cpp)
+ADD_EXECUTABLE(test Node/Node.cpp Linked_List/LinkedList.cpp Testing/Testing.h Testing/unit_test.cpp)
 
 target_precompile_headers(test
     PUBLIC
