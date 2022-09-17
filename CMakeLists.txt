@@ -8,6 +8,8 @@ if(NOT CMAKE_BUILD_TYPE)
 endif()
 
 ADD_SUBDIRECTORY(googletest)
+ADD_SUBDIRECTORY(Node Node.cxx)
+ADD_SUBDIRECTOR(Linked_List LinkedList.cxx)
 
 ADD_EXECUTABLE(main Node/Node.cpp Linked_List/LinkedList.cpp main.cpp)
 
@@ -16,12 +18,12 @@ ADD_EXECUTABLE(test Node/Node.cpp Linked_List/LinkedList.cpp Testing/Testing.h u
 ADD_EXECUTABLE(NodeTests Node/Node.cpp Testing/NodeTests.h unit_test.cpp)
 
 
-target_precompile_headers(NodeTests
+target_precompile_headers(test
     PUBLIC
     <gtest/gtest.h>
-
 )
 
 
+
 TARGET_LINK_LIBRARIES(test gtest)
-TARGET_LINK_LIBRARIES(NodeTests gtest)
+
