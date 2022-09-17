@@ -16,7 +16,6 @@ ADD_EXECUTABLE(test Node/Node.cpp Linked_List/LinkedList.cpp Testing.h unit_test
 target_precompile_headers(test
     PUBLIC
     <gtest/gtest.h>
-
 )
 
 
