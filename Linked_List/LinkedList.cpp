@@ -48,7 +48,11 @@ void LinkedList::delete_this(Node* n){
     n->next = n->next->next;
 }
 
-
+void LinkedList::swap(Node* a, Node* b){
+    Node* temp = b->next;
+    b->next = a;
+    a->next = temp;
+}
 
 void LinkedList::append(Node* n){ 
     Node* iter = this->head;
@@ -75,7 +79,6 @@ void LinkedList::insert(int index, Node* node){
         }
     }
 }
-
 
 void LinkedList::print(){
     if(this->head == nullptr){

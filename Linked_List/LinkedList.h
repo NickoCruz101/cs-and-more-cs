@@ -16,13 +16,13 @@ class LinkedList{
         LinkedList(Node* head);
 
         Node* getHead();
-
         int getHeadVal();
 
         void create(vector<int> );
-
         void updateSize();
+
         int getSize();
+        void swap(Node* a, Node* b);
 
 
         void delete_this(Node* n);
