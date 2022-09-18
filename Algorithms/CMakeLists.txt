@@ -1,0 +1,6 @@
+CMAKE_MINIMUM_REQUIRED(VERSION 3.10)
+
+PROJECT(Algos)
+
+ADD_EXECUTABLE(BubbleSort BubbleSort.cpp)
+
