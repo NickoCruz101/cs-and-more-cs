@@ -1,23 +1,53 @@
+#include <iostream>
+#include <vector>
+#include <algorithm>
 #include "../Linked_List/LinkedList.h"
-#include "../Node/Node.h"
+using std::vector; using std::string;
+using std::swap; using std::cout;
+using std::endl;
 
-// swap a with b
+
+void bubbleSort(LinkedList* l);
+
+void bubbleSort(int arr[], int n);
+
+void swap(Node* a, Node* b);
+
+
+int main(){
+    vector<int> vec = {44,21,65,23,34};
+    int arr[6] = {345,223,143, 89,632,45};
+
+    LinkedList* list = new LinkedList();
+    list->create(vec);
+
+    bubbleSort(list);
+}
+
 void swap(Node* a, Node* b){
     Node* tmp = b->next;
     b->next = a;
     a->next = tmp;
 }
+void bubbleSort(LinkedList* l){
+    for(Node* i = l->getHead(); i != nullptr; i++){
+        cout << i << endl;
+    }
+}
 
-void BubbleSort(LinkedList* list){
-    Node* a_ptr = list->getHead();
-    Node* b_ptr = nullptr;
+void bubbleSort(int arr[], int n){
+    int i;
+    int j;
 
-    while(b_ptr->next != nullptr){
-        if(a_ptr->value > b_ptr->value){
-            swap(a_ptr,b_ptr);
+    for( i = 0; i < n - 1; i++)
+    {
+      for(j = 0; j < n - i - 1; j++)
+      {
+        if(arr[j] > arr[j + 1])
+        {
+          swap(arr[j], arr[j+1]);
         }
-
-        
+      }        
     }
 
 }
