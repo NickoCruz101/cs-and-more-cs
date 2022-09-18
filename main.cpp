@@ -7,15 +7,21 @@ int main(){
     Node* n1 = new Node(34, n2);
     Node* n0 = new Node(10, n1);
 
-    LinkedList linked_list(n0);
+    LinkedList linked_list_A(n0);
 
-    linked_list.print();
-    linked_list.updateSize();
+    linked_list_A.print();
+    linked_list_A.updateSize();
 
-    cout<< linked_list.getSize()<<endl;
+    cout<< linked_list_A.getSize()<<endl;
 
 
-    linked_list.print();
+    vector<int> vec = {1,2,3,4};
+    LinkedList* linked_list_B = new LinkedList();
+
+    linked_list_B->create(vec);
+
+
+    linked_list_B->print();
 
     
 
