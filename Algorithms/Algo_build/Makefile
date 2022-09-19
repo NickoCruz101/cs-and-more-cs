@@ -153,6 +153,54 @@ BubbleSort.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/BubbleSort.dir/build.make CMakeFiles/BubbleSort.dir/BubbleSort.cpp.s
 .PHONY : BubbleSort.cpp.s
 
+Users/nickocruz/Developer/GitHub/cs-and-more-cs/Linked_List/LinkedList.o: Users/nickocruz/Developer/GitHub/cs-and-more-cs/Linked_List/LinkedList.cpp.o
+.PHONY : Users/nickocruz/Developer/GitHub/cs-and-more-cs/Linked_List/LinkedList.o
+
+# target to build an object file
+Users/nickocruz/Developer/GitHub/cs-and-more-cs/Linked_List/LinkedList.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/BubbleSort.dir/build.make CMakeFiles/BubbleSort.dir/Users/nickocruz/Developer/GitHub/cs-and-more-cs/Linked_List/LinkedList.cpp.o
+.PHONY : Users/nickocruz/Developer/GitHub/cs-and-more-cs/Linked_List/LinkedList.cpp.o
+
+Users/nickocruz/Developer/GitHub/cs-and-more-cs/Linked_List/LinkedList.i: Users/nickocruz/Developer/GitHub/cs-and-more-cs/Linked_List/LinkedList.cpp.i
+.PHONY : Users/nickocruz/Developer/GitHub/cs-and-more-cs/Linked_List/LinkedList.i
+
+# target to preprocess a source file
+Users/nickocruz/Developer/GitHub/cs-and-more-cs/Linked_List/LinkedList.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/BubbleSort.dir/build.make CMakeFiles/BubbleSort.dir/Users/nickocruz/Developer/GitHub/cs-and-more-cs/Linked_List/LinkedList.cpp.i
+.PHONY : Users/nickocruz/Developer/GitHub/cs-and-more-cs/Linked_List/LinkedList.cpp.i
+
+Users/nickocruz/Developer/GitHub/cs-and-more-cs/Linked_List/LinkedList.s: Users/nickocruz/Developer/GitHub/cs-and-more-cs/Linked_List/LinkedList.cpp.s
+.PHONY : Users/nickocruz/Developer/GitHub/cs-and-more-cs/Linked_List/LinkedList.s
+
+# target to generate assembly for a file
+Users/nickocruz/Developer/GitHub/cs-and-more-cs/Linked_List/LinkedList.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/BubbleSort.dir/build.make CMakeFiles/BubbleSort.dir/Users/nickocruz/Developer/GitHub/cs-and-more-cs/Linked_List/LinkedList.cpp.s
+.PHONY : Users/nickocruz/Developer/GitHub/cs-and-more-cs/Linked_List/LinkedList.cpp.s
+
+Users/nickocruz/Developer/GitHub/cs-and-more-cs/Node/Node.o: Users/nickocruz/Developer/GitHub/cs-and-more-cs/Node/Node.cpp.o
+.PHONY : Users/nickocruz/Developer/GitHub/cs-and-more-cs/Node/Node.o
+
+# target to build an object file
+Users/nickocruz/Developer/GitHub/cs-and-more-cs/Node/Node.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/BubbleSort.dir/build.make CMakeFiles/BubbleSort.dir/Users/nickocruz/Developer/GitHub/cs-and-more-cs/Node/Node.cpp.o
+.PHONY : Users/nickocruz/Developer/GitHub/cs-and-more-cs/Node/Node.cpp.o
+
+Users/nickocruz/Developer/GitHub/cs-and-more-cs/Node/Node.i: Users/nickocruz/Developer/GitHub/cs-and-more-cs/Node/Node.cpp.i
+.PHONY : Users/nickocruz/Developer/GitHub/cs-and-more-cs/Node/Node.i
+
+# target to preprocess a source file
+Users/nickocruz/Developer/GitHub/cs-and-more-cs/Node/Node.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/BubbleSort.dir/build.make CMakeFiles/BubbleSort.dir/Users/nickocruz/Developer/GitHub/cs-and-more-cs/Node/Node.cpp.i
+.PHONY : Users/nickocruz/Developer/GitHub/cs-and-more-cs/Node/Node.cpp.i
+
+Users/nickocruz/Developer/GitHub/cs-and-more-cs/Node/Node.s: Users/nickocruz/Developer/GitHub/cs-and-more-cs/Node/Node.cpp.s
+.PHONY : Users/nickocruz/Developer/GitHub/cs-and-more-cs/Node/Node.s
+
+# target to generate assembly for a file
+Users/nickocruz/Developer/GitHub/cs-and-more-cs/Node/Node.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/BubbleSort.dir/build.make CMakeFiles/BubbleSort.dir/Users/nickocruz/Developer/GitHub/cs-and-more-cs/Node/Node.cpp.s
+.PHONY : Users/nickocruz/Developer/GitHub/cs-and-more-cs/Node/Node.cpp.s
+
 # Help Target
 help:
 	@echo "The following are some of the valid targets for this Makefile:"
@@ -165,6 +213,12 @@ help:
 	@echo "... BubbleSort.o"
 	@echo "... BubbleSort.i"
 	@echo "... BubbleSort.s"
+	@echo "... Users/nickocruz/Developer/GitHub/cs-and-more-cs/Linked_List/LinkedList.o"
+	@echo "... Users/nickocruz/Developer/GitHub/cs-and-more-cs/Linked_List/LinkedList.i"
+	@echo "... Users/nickocruz/Developer/GitHub/cs-and-more-cs/Linked_List/LinkedList.s"
+	@echo "... Users/nickocruz/Developer/GitHub/cs-and-more-cs/Node/Node.o"
+	@echo "... Users/nickocruz/Developer/GitHub/cs-and-more-cs/Node/Node.i"
+	@echo "... Users/nickocruz/Developer/GitHub/cs-and-more-cs/Node/Node.s"
 .PHONY : help
 
 
