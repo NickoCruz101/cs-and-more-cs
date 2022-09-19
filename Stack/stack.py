@@ -4,8 +4,7 @@ class stack:
         self.arr = []
     
     def push(self,item):
-        index = self.__size
-        self.arr[index] = item
+        self.arr.append(item)
         self.__size += 1
         
     def pop(self):

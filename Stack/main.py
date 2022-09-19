@@ -9,3 +9,7 @@ if(__name__ == '__main__'):
     stackA.push(24)
     
     stackA.describe()
+    print("_________",end="\n \n")
+    stackA.pop()
+    
+    stackA.describe()
