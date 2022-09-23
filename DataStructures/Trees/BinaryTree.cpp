@@ -35,8 +35,7 @@ BinaryTree::BinaryTree(vector<int>& vec){
             iter->setLeft(curr);
         }
         else{
-            iter->setRight(curr);
-            
+            iter->setRight(curr);           
         }
         
     }
