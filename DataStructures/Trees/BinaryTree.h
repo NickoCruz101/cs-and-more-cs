@@ -22,6 +22,7 @@ class TreeNode {
         TreeNode(int val, TreeNode* left, TreeNode* right);
 
         int getVal();
+        void setVal(int val);
 
 };
 

@@ -28,6 +28,26 @@ int TreeNode::getVal(){
     return this->val;
 }
 
+void TreeNode::setVal(int val){
+    this->val = val;
+}
+
 BinaryTree::BinaryTree(vector<int>& vec){
+    this->root = new TreeNode(vec[0]);
+    TreeNode* iter = root;
+    int i = 1;
+    while(i < vec.size()){
+        
+        TreeNode* curr = new TreeNode(vec[i]);
+        if(iter->getVal() < curr->getVal()){
+            iter->left = curr;
+        }else{
+            iter->right = curr;
+        }
+        
+        
+    }
+    
+
 
 }
