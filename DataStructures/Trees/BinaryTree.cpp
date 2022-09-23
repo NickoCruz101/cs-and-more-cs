@@ -24,6 +24,10 @@ TreeNode::TreeNode(int val, TreeNode* left, TreeNode* right){
     this->right = right;
 };
 
+int TreeNode::getVal(){
+    return this->val;
+}
+
 BinaryTree::BinaryTree(vector<int>& vec){
 
 }
