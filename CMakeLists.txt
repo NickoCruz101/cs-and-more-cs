@@ -8,14 +8,14 @@ if(NOT CMAKE_BUILD_TYPE)
 endif()
 
 ADD_SUBDIRECTORY(googletest)
-ADD_SUBDIRECTORY(Node Node.cxx)
-ADD_SUBDIRECTOR(Linked_List LinkedList.cxx)
+#ADD_SUBDIRECTORY(Node Node.cxx)
+#ADD_SUBDIRECTORY(Linked_List LinkedList.cxx)
 
-ADD_EXECUTABLE(main Node/Node.cpp Linked_List/LinkedList.cpp main.cpp)
+#ADD_EXECUTABLE(main Node/Node.cpp Linked_List/LinkedList.cpp main.cpp)
 
-ADD_EXECUTABLE(test Node/Node.cpp Linked_List/LinkedList.cpp Testing/Testing.h unit_test.cpp)
+ADD_EXECUTABLE(test Node/Node.cpp Linked_List/LinkedList.cpp Testing/Testing.h Testing/unit_test.cpp)
 
-ADD_EXECUTABLE(NodeTests Node/Node.cpp Testing/NodeTests.h unit_test.cpp)
+#ADD_EXECUTABLE(NodeTests Node/Node.cpp Testing/NodeTests.h unit_test.cpp)
 
 
 target_precompile_headers(test
