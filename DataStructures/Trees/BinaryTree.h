@@ -21,7 +21,10 @@ class TreeNode {
         TreeNode(int val, TreeNode* left);
         TreeNode(int val, TreeNode* left, TreeNode* right);
 
-        int getVal();
+        int getVal(){ return this->val; }
+        void setVal(int val){ this->val = val; }
+        void setLeft(TreeNode* l){ this->left = l; }
+        void setRight(TreeNode* r){ this->right = r; }
 
 };
 
