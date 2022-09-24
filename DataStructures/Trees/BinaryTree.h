@@ -35,7 +35,9 @@ class BinaryTree:public TreeNode{
     protected:
 
     public:
-        BinaryTree(vector<int>& vec);
+        BinaryTree(TreeNode* root);
+
+        TreeNode* buildTree();
 
 
 };
