@@ -1,7 +1,7 @@
 #include "BinaryTree.h"
 
 TreeNode::TreeNode(){
-    this->val = NULL;
+    this->val = 0;
     this->left = nullptr;
     this->right = nullptr;
 };
