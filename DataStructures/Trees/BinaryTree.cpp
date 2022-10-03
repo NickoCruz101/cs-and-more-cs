@@ -1,7 +1,7 @@
 #include "BinaryTree.h"
 
 TreeNode::TreeNode(){
-    this->val = NULL;
+    this->val = 0;
     this->left = nullptr;
     this->right = nullptr;
 };
@@ -24,20 +24,34 @@ TreeNode::TreeNode(int val, TreeNode* left, TreeNode* right){
     this->right = right;
 };
 
-BinaryTree::BinaryTree(vector<int>& vec){
-    this->root = new TreeNode(vec[0]);
-    TreeNode* iter = root;
-    int i = 1;
-    while(i < vec.size()){
-        i = i + 1;
-        TreeNode* curr = new TreeNode(vec[i]);
-        if(iter->getVal() < curr->getVal()){
-            iter->setLeft(curr);
-        }
-        else{
-            iter->setRight(curr);
-            
-        }
-        
+bool TreeNode::isEmpty(){
+    if(this->right == nullptr && this->left == nullptr){
+        return true;
     }
+    return false;
 }
+
+BinaryTree::BinaryTree(TreeNode* root){
+    this->root = root;
+}
+
+
+void BinaryTree::insert_helper(TreeNode* base, TreeNode* n){
+    if(base->isEmpty()){
+        if(base->getVal() < n->getVal()){
+            base->setRight(n);
+        }
+        else{ base->setLeft(n); }
+    }
+    
+}
+
+void BinaryTree::insert(TreeNode* n){
+    // assign iterator
+    TreeNode* curr_node = this->root;
+
+}
+
+TreeNode* buildTree(vector<int> &vec){
+
+};

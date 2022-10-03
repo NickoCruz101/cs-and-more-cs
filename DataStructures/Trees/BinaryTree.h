@@ -7,14 +7,12 @@
 using std::vector; using std::cout;
 using std::endl;
 
-class TreeNode {
+class TreeNode{
     private:
         int val;
+    protected:
         TreeNode* left = nullptr;
         TreeNode* right = nullptr;
-
-
-
     public:
         TreeNode();
         TreeNode(int val);
@@ -26,16 +24,27 @@ class TreeNode {
         void setLeft(TreeNode* l){ this->left = l; }
         void setRight(TreeNode* r){ this->right = r; }
 
+        bool isEmpty();
+
 };
 
-class BinaryTree:public TreeNode{
+class BinaryTree:protected TreeNode{
 
     private:
         TreeNode* root = nullptr;
     protected:
 
     public:
-        BinaryTree(vector<int>& vec);
+        // BinaryTree Constructor
+            // assign root_arg to root
+        BinaryTree(TreeNode* root);
+
+        // Insert Method
+        void insert_helper(TreeNode* base, TreeNode* n);
+        void insert(TreeNode* n);
+
+        // build Tree from vec passed by reference
+        TreeNode* buildTree(vector<int> &vec);
 
 
 };
