@@ -45,7 +45,7 @@ struct Node{
     void add_to_potMoves(Node* n){
         this->potMoves.push_back(n);
     }
-}
+};
 
 int main(){
     //read in input
