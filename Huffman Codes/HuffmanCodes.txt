@@ -1,0 +1,16 @@
+HUFFMAN CODES, Developed by David Huffman
+
+- technique to compress data and reduce its size without losing and information. 
+
+STEPS
+
+    1. calculate frequency of each character in the string
+    2. Sort the characters in increasing order, by their frequency, Store these in a priority queue (Q)
+    3. Make each unique character as a leaf node.
+    4. Create an empty node (z). Assign the minimum frequency to the left child of z and assign the seconde minimum freq to the right child of (z).
+    5. Set the value of z as the sum of the above minimum frequencies.
+    6. Remove these twoo minimum frequencies from (Q) and add the sum into the list of frequencies.
+    7. Insert node (z) into the tree.
+    8. Repeat steps 3 to 6 for all characters.
+    9. For each non-leaf node assign 0 to the left edge and 1 to the right edge.
+    
