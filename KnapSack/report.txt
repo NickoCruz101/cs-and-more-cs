@@ -18,4 +18,3 @@ Given (n) items and a bag with a capacity of (c). Our runtime would be O(cn).
 
 
 
-ß
