@@ -29,12 +29,12 @@ int main(){
     // Reads in each line assigning them to an item object and pushing them back into
     // the items vector
 
-    // int w,v;
-    // while(currLine <= n){
-    //     cin>>w>>v;
-    //     item i(w,v);
-    //     items.push_back(i);
-    //     currLine = currLine + 1;
-    // }
+    int w,v;
+    while(currLine <= n){
+        cin>>w>>v;
+        item i(w,v);
+        items.push_back(i);
+        currLine = currLine + 1;
+    }
 
 }
