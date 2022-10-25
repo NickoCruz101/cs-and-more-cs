@@ -1,0 +1,13 @@
+This is a 0/1 simple knapsack problem: so simple that Yihan doesn't want to make up a story for it.
+
+Given 𝑛 items, with weight 𝑤𝑖 and value 𝑣𝑖, and the capacity of your knapsack 𝑊, compute the maximum possible total value of the items selected within weight 𝑊. You can select every item at most once.
+
+Input
+The first line contains two numbers 𝑊 (1≤𝑊≤1000), which is the weight budget, and 𝑛 (1≤𝑛≤100), which is the number of items.
+
+The next 𝑛 lines each contains 2 integers. The 𝑖-th line contains 𝑤𝑖 and 𝑣𝑖.
+
+All 𝑤𝑖 and 𝑣𝑖 are in range 1 to 100.
+
+Output
+The output only contains one integer, which is the maximum value you can get by selecting items within total weight 𝑊.
