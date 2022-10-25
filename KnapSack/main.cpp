@@ -19,15 +19,16 @@ int main(){
     int capacity,n; //capacity of bag and (n) lines to read in
     cin >>capacity >> n;
 
-    vector<int> S(capacity,0);
-
-    for(auto i: S){
-        cout << i << endl;
+    vector<vector<int>> S; // Matrix (S)
+    // Populate Matrix with (n)-rows where each row is populated with zeros
+    
+    for(int i = 0; i < n; i++){
+        vector<int> v(capacity,0);
+        S.push_back(v);
     }
 
     int currLine = 1; // line counter
-    // Reads in each line assigning them to an item object and pushing them back into
-    // the items vector
+    // Reads in each line assigning them to an item object and pushing them back into the items vector
 
     int w,v;
     while(currLine <= n){
