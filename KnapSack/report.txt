@@ -1,0 +1,7 @@
+
+Created an item object to be used as a container to hold the weight and value of the items that are read in.
+
+The input is read in and assigned to capacity, the weight limit of the bag, and n, the number of items to be read in.
+We then go into a while loop where the counter currline is incremented every iteration until currLine is greater than n.
+Each line that is read in is assigned to (w) weight, and (v) value of the item. A item object is then declared and w and v are then passed in
+to initialize the object. Then we push the item object back into the global items vector to be used later.
