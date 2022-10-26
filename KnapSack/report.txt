@@ -1,3 +1,5 @@
+0/1 KNAPSACK PROBLEM:
+
 After collecting the input. I instantiate an object Knapsack which has two methods.
 
 The first method solveKnapsack is what is called in the main function.
