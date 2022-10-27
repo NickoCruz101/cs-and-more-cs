@@ -1,0 +1,22 @@
+0/1 KNAPSACK PROBLEM:
+
+After collecting the input. I instantiate an object Knapsack which has two methods.
+
+The first method solveKnapsack is what is called in the main function.
+
+The second method knapRec is the helper function called within solveKnapsack. Where the recurrsive statements are called.
+By using memoization I store the result of the solved subproblems. Into matrix S which is declared within the solveKnapsack Method.
+
+I use two recurrsive calls. 
+The first includes the value of the current index and assigns it to bestA, but the second excludes it and assigns it to bestB. 
+we store the greater solution of the two and store it in S[currentIndex][capacity].
+
+In order to avoid solving subproblems that have already been solved I used dynamic programming.
+I stored the solutions to subproblems using a matrix S which is populated with (-1) 
+using recurrsion we recurrsively check if the element at the current position is equal to -1. 
+If it is not then we know that this subproblem has already been solve and can return the best solution for that current capacity.
+
+Given (n) items and a bag with a capacity of (c). Our runtime would be O(cn).
+
+
+
