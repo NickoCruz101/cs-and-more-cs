@@ -1,30 +1,27 @@
 #include <iostream>
 #include <vector>
+#include <algorithm>
 
 using namespace std;
 
-int getMax(vector<int>& ,int ,int max = 0);
+int getMax(vector<int>& ,int );
 
 
 int main(){
     int max = 0;
     vector<int> v = {1,2,3,4};
 
-    cout<< getMax(v,0,0);
+    max = getMax(v,v.size());
+    cout<< max;
 }
 
-int getMax(vector<int>& vec,int i,int max){
+int getMax(vector<int>& vec,int n){
     
     // Base case 1
-    if(i >= vec.size()){
-        return 0;
+    if(n == 1){
+        return vec[0];    
     }
 
-    // Max condition
-    if(max < vec[i]){
-        max = getMax(vec,i+1,max);
-    }
-
-    return max;
+    return max(vec[n-1],getMax(vec,n-1)); 
 
 }
