@@ -1,0 +1,22 @@
+A(3) =  ".-"    B(2) = "-..."   C(1) = "-.-."   D(2) = "-.."    E(3) = "." 
+
+K(2) = "-.-"    R(2) = ".-."    T(2) = "-"  U(1) = "..-"
+
+
+    s[c]: the number of strokes of a letter c.
+    
+    Given: ".-.-"
+
+        Possible interpretations of ".-.-"
+            - "AA" => 6 strokes
+            - "EK" => 5 strokes
+            - "RT" => 4 strokes
+            - ETET => 10 strokes
+        
+        Minimum num of strokes out of the possible interpretations is "EK" => 4 strokes.
+
+1) "UCR" = "..--.-..-."
+
+    i) E W E R = ". .-- . .-."
+    ii) E E Q E T E = ". . --.- . . - ."
+    iii) EPXE = ". .--. -..- ."
