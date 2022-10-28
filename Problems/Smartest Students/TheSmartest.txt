@@ -1,1 +1,18 @@
-1) If 
+1) If we only have the restriction of total weight (W). Which algorithm
+we learned in class can solve this problem?
+
+    - We can use the Dynamic Programming approach, the same algorithm and Execution Recurrence Tree
+    which solve the unlimited knapsack problem.
+    - In the Knapsack problem, we are given a set of objects, the value and weight of each object, and
+    the weight capacity of the knapsack. 
+    - we are tasked with finding the maximum total value of a set of objects, 
+    such that the sum of all selected object's weight does not exceed the weight capacity of the
+    knapsack.
+
+    - In short, An optimization problem where we want to maximize one value but have a given restriction.
+    - This problem can be solved by usng an Execution Recurrence Tree data structure, as we did with the Knapsack problem
+    - Where instead of 
+        - objects we have students
+        - values we have students IQ's (smart level)
+    - similar to the knapsack problem we have given weights and weight capacity restriction.
+

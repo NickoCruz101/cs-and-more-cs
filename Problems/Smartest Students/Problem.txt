@@ -1,0 +1,11 @@
+Yihan is invited to take some of her students to a top international conference. She plans to select some
+students from the CS141 class. There are N students who are interested in the conference. However, Yihan
+only has a limited budget, and only a subset of students can be selected (well, sorry!). UCR decided to send
+an airplane for Yihan and the students. There are T seats on the plane, and the plane can take at most
+W lbs of passenger and luggage. Yihan knows the weight of each student with his/her luggage, noted as wi
+for the i-th student. You can assume that Yihan drives the plane (she’s not good at driving planes though.
+Watch out!) so she doesn’t count in the T seats, nor for the W-lb weight limit.
+Yihan wants to let others know that UCR students are really good. Hence, she wants to take the smartest
+students. In particular, we know the smartness of each student, noted as si for the i-th student. She wants
+to know the highest total smartness she can achieve, by selecting no more than T students with weight
+no more than W. The total smartness is the sum of the smartness of all selected students.
