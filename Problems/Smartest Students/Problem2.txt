@@ -17,6 +17,17 @@ K(2) = "-.-"    R(2) = ".-."    T(2) = "-"  U(1) = "..-"
 
 1) "UCR" = "..--.-..-."
 
-    i) E W E R = ". .-- . .-."
-    ii) E E Q E T E = ". . --.- . . - ."
-    iii) EPXE = ". .--. -..- ."
+    i) E W E R  = ". .-- . .-."
+        - strokes: 12
+        - length: 4
+    ii) E E Q E T E  = ". . --.- . . - ."
+        - strokes: 16
+        - length: 6
+
+    iii) E P X E = ". .--. -..- ."
+        - strokes: 10
+        - length: 4
+
+    The interpretation with the minimum amount of strokes out of the three listed is "EPXE" with 10 strokes.
+
+    

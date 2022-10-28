@@ -16,3 +16,6 @@ we learned in class can solve this problem?
         - values we have students IQ's (smart level)
     - similar to the knapsack problem we have given weights and weight capacity restriction.
 
+2) 
+    (a): (j,k)
+    (b): T or N
