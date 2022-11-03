@@ -1,0 +1,5 @@
+Given (n) houses on a stree we can't rob adjacent houses. 
+
+if we rob house 1 we can't rob house 2 but we can rob house 3.
+
+We want to optimize the amount of money we can rob.
