@@ -1,5 +1,6 @@
 #include <iostream>
 #include <vector>
+#include <string>
 
 using namespace std;
 
@@ -43,17 +44,50 @@ int lds(vector<int> &seq, int n)
 }
 
 int main(){
-    int n1 = 9;
-    vector<int> seq1 = {1,5,4,7,9,6,3,8,2};
+    
+    int n;
+    vector<int> seq;
 
-    int n2 = 5;
-    vector<int> seq2 = {22160, 297625, 230329, 191306, 867900};
+    string s;
+    int lineCount = 1;
+    while(lineCount < 3){
+        getline(cin,s);
+        if(lineCount == 1){
+            n = int(s[0]) - 48;
+            //cout << "n: "<< n << endl;
+        }
+        lineCount = lineCount + 1;
+    };
 
-    int n3 = 8;
-    vector<int> seq3 = {878361,973449,649581,186790,904723,54458,959645,322343};
+    //cout<<"s: "<< s << endl;
 
-    cout<<lds(seq1,n1)<<endl;
-    cout<<lds(seq2,n2)<< endl;
-    cout<<lds(seq3,n3)<< endl;
+    for(int i = 0; i < s.length(); i++){
+        int x = int(s[i]);
+        if(x != 32){
+            x = x - 48;
+            seq.push_back(x);
+        }
+    }
+
+    // for(int i = 0; i < seq.size(); i++){
+    //     cout << seq[i] <<" "<< endl;
+    // }
+
+
+
+    // int n1 = 9;
+    // vector<int> seq1 = {1,5,4,7,9,6,3,8,2};
+
+    // int n2 = 5;
+    // vector<int> seq2 = {22160, 297625, 230329, 191306, 867900};
+
+    // int n3 = 8;
+    // vector<int> seq3 = {878361,973449,649581,186790,904723,54458,959645,322343};
+
+    // cout<<lds(seq1,n1)<<endl;
+    // cout<<lds(seq2,n2)<< endl;
+    // cout<<lds(seq3,n3)<< endl;
+
+    cout << lds(seq,n) << endl;
 
 }
