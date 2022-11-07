@@ -50,15 +50,15 @@ int main(){
 
     cin >> n;
 
-    int i = 1;
+    int i = 0;
     int x = 0;
-    while(i <= n){
+    while(i < n){
         cin >> x;
         seq.push_back(x);
         i = i + 1;
     }
 
-    cout<< lds(seq,n);
+    cout<< lds(seq,n)<<endl;
 
 
 
