@@ -6,8 +6,6 @@
 using namespace std;
 
 class Knapsack{
-
-
 public:
     int solveKnapsack(const vector<int> &values, const vector<int> &weights, int capacity){
         vector<vector<int>> S(values.size(), vector<int>(capacity + 1, -1));
