@@ -4,9 +4,9 @@ In class we learned the dynamic programming algorithm to compute the edit distan
 
 ## Input
 
-The first line contains two integer $𝑛_1$ and $𝑛_2$ $(1≤𝑛1,𝑛2≤1000)$, which are the length of strings 𝑎 and 𝑏, respectively.
+The first line contains two integer $n_1$ and $n_2$ $(1≤n_1,n_2≤1000)$, which are the length of strings $a$ and $b$, respectively.
 
-The second line contains 𝑛1 integers, which is the sequence of $a$ (each $𝑎𝑖, 0\leq a_i \leq 1000)$.
+The second line contains $n_1$ integers, which is the sequence of $a$ (each $a_i, 0\leq a_i \leq 1000)$.
 
 The third line contains $n_2$ integers, which is the sequence of $b$ (each $b_i, 0\leq b_i \leq 1000)$.
 
