@@ -1,6 +1,6 @@
 # Weighted Edit Distance
 
-In class we learned the dynamic programming algorithm to compute the edit distance. In this problem, your task is to write a program to compute the weighted edit distance. In particular, you have two sequences of integers 𝑎 and 𝑏. You want to use insertion, deletion, or edit to change 𝑎 to match 𝑏. However, the costs of the three operations are different. The cost of inserting an element 𝑥 is 𝑥. The cost of deleting an element 𝑥 is 𝑥. The cost of editing (changing) an element from 𝑥 to 𝑦 is |𝑥−𝑦|. Your task is to change 𝑎 to 𝑏 with the smallest cost.
+In class we learned the dynamic programming algorithm to compute the edit distance. In this problem, your task is to write a program to compute the weighted edit distance. In particular, you have two sequences of integers $a$ and $b$. You want to use insertion, deletion, or edit to change $a$ to match $b$. However, the costs of the three operations are different. The cost of inserting an element $x$ is $x$. The cost of deleting an element $x$ is $x$. The cost of editing (changing) an element from $x$ to $y$ is $|x-y|$. Your task is to change $a$ to $𝑏$ with the smallest cost.
 
 ## Input
 
