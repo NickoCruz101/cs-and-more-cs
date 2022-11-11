@@ -8,6 +8,7 @@ using namespace std;
 int solve(vector< vector<int> >& dp, int i,int j, vector<int>& A, vector<int>& B);
 void populate(vector<int>& seq, int length);
 void printArr(vector<int>& v, string lbl);
+int getMin(int x, int y, int z);
 //void populateMatrix(int arr[][]);
 
 int main(){
@@ -84,6 +85,15 @@ void printArr(vector<int>& v, string lbl){
     
 }
 
+int getMin(int x, int y, int z){
+    int m = min(x,y);
+    int n = min(y,z);
+
+    if(m - n <= 0){
+        return(m);
+    }
+    return(n);
+}
 // dp 0th row and 0th column has already been populated.
 // Pass i = 1 and j = 1
 int solve(vector< vector<int> >& dp, int i,int j, vector<int>& A, vector<int>& B){
@@ -123,7 +133,8 @@ int solve(vector< vector<int> >& dp, int i,int j, vector<int>& A, vector<int>& B
         int c = solve(dp,i,j-1,A,B) + A[j];
         //cout<<" c: "<< c << " ";
         cout<< "d[" << i << "][" << j << "] = "<< min({a,b,c}) << " "<< endl;
-        return dp[i][j] = min({a,b,c});
+        //return dp[i][j] = min({a,b,c});
+        return dp[i][j] = getMin(a,b,c);
 
     }
 }

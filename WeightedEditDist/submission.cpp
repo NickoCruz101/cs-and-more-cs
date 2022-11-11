@@ -1,14 +1,15 @@
 #include <iostream>
 #include <vector>
 #include <string>
+#include <algorithm>
 
 using namespace std;
 
 
 int solve(vector< vector<int> >& dp, int i,int j, vector<int>& A, vector<int>& B);
 void populate(vector<int>& seq, int length);
-void printArr(vector<int>& v, string lbl);
-//void populateMatrix(int arr[][]);
+int getMin(int x, int y, int z);
+
 
 int main(){
 //Get input
@@ -44,6 +45,16 @@ int main(){
 
 }
 
+int getMin(int x, int y, int z){
+    int m = min(x,y);
+    int n = min(y,z);
+
+    if(m - n <= 0){
+        return(m);
+    }
+    return(n);
+};
+
 void populate(vector<int>& seq, int length){
     seq.push_back(0);
     int a;
@@ -51,46 +62,40 @@ void populate(vector<int>& seq, int length){
         cin >> a;
         seq.push_back(a);
     }
-}
-void printArr(vector<int>& v, string lbl){
-    cout<< lbl;
-    for(int i = 0; i < v.size(); i++){
-        cout<< v[i] << " ";
-    }
-    cout<<"\n"<<endl;
-
-}
+};
 
 int solve(vector< vector<int> >& dp, int i,int j, vector<int>& A, vector<int>& B){
     if(dp[i][j] != 0){
         return dp[i][j];
     }
-    bool notZero = (i != 0 and j != 0);
+    bool notZero = (i != 0 && j != 0);
 
-    if(A[j] == B[i] and notZero){
+    if(A[j] == B[i] && notZero){
         return dp[i][j] = solve(dp,i,j-1,A,B);
     }
 
-    if(i == 0 and j == 0){
+    if(i == 0 &&j == 0){
         return dp[i][j];
     }
 
-    if(i == 0 and j != 0){
+    if(i == 0 && j != 0){
         return dp[0][j];
     }
 
-    if(j == 0 and i != 0){
+    if(j == 0 && i != 0){
         return dp[i][0];
     }
 
-    if(i >= 1 or j >= 1){
+    if(i >= 1 || j >= 1){
         int a = solve(dp,i-1,j,A,B) + B[i];
         int b = solve(dp,i-1,j-1,A,B) + abs(A[j] - B[i]);
         int c = solve(dp,i,j-1,A,B) + A[j];
 
-        return dp[i][j] = min({a,b,c});
+        return dp[i][j] = getMin(a,b,c);
 
     }
+
+    return dp[B.size()][A.size()];
 }
 
 
