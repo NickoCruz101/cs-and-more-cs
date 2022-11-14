@@ -5,51 +5,6 @@
 
 using namespace std;
 
-
-int solve(vector< vector<int> >& dp, int i,int j, vector<int>& A, vector<int>& B);
-void populate(vector<int>& seq, int length);
-int getMin(int x, int y, int z);
-
-
-int main(){
-//Get input
-    int n1,n2;
-    int rows,cols;
-
-    cin >> n1; // size of Sequence A
-    cin >> n2; // size of Sequence B
-
-
-
-    vector<int> A;
-    vector<int> B;
-
-    populate(A,n1);
-    populate(B,n2);
-
-
-
-    rows = n2 + 1;
-    cols = n1 + 1;
-    vector< vector<int> > dp(rows + 1, vector<int>(cols + 1, 0));
-
-
-    for(int j = 1; j <= cols; j++){
-        dp[0][j] = dp[0][j-1] + A[j];
-    }
-
-    for(int i = 1; i <= rows; i++){
-        dp[i][0] = dp[i-1][0] + B[i];
-    }
-
-    int cost = solve(dp,n2,n1,A,B);
-
-    cout<< cost << endl;
-
-    return 0;
-
-}
-
 int getMin(int x, int y, int z){
     int m = min(x,y);
     int n = min(y,z);
@@ -76,10 +31,10 @@ int solve(vector< vector<int> >& dp, int i,int j, vector<int>& A, vector<int>& B
     bool notZero = (i != 0 && j != 0);
 
     if(A[j] == B[i] && notZero){
-        return dp[i][j] = solve(dp,i-1,j-1,A,B);
+        return dp[i][j] = solve(dp,i,j-1,A,B);
     }
 
-    if(i == 0 && j == 0){
+    if(i == 0 &&j == 0){
         return dp[i][j];
     }
 
@@ -100,6 +55,39 @@ int solve(vector< vector<int> >& dp, int i,int j, vector<int>& A, vector<int>& B
 
     }
     return dp[B.size()][A.size()];
-};
+}
+
+int main(){
+//Get input
+    int n1,n2;
+    int rows,cols;
+
+    cin >> n1; // size of Sequence A
+    cin >> n2; // size of Sequence B
+
+    vector<int> A;
+    vector<int> B;
+
+    populate(A,n1);
+    populate(B,n2);
+
+    rows = n2 + 1;
+    cols = n1 + 1;
+    vector< vector<int> > dp(rows + 1, vector<int>(cols + 1, 0));
 
 
+    for(int j = 1; j <= cols; j++){
+        dp[0][j] = dp[0][j-1] + A[j];
+    }
+
+    for(int i = 1; i <= rows; i++){
+        dp[i][0] = dp[i-1][0] + B[i];
+    }
+
+    int cost = solve(dp,n2,n1,A,B);
+
+    cout<< cost << endl;
+
+    return 0;
+
+}

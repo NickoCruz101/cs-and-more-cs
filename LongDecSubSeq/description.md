@@ -1,4 +1,6 @@
 # Longest Decreasing Subsequence
+### username: NickoCruz
+### id: 180411321
 
 ## Description
 
@@ -29,3 +31,5 @@ $$
 ## Time complexity
 
 $$ \text{LDS = }O{(n^2)} $$
+
+
