@@ -64,6 +64,8 @@ int main(){
         cout<< endl;
     }
 
+    return 0;
+
 }
 
 void populate(vector<int>& seq, int length){
@@ -105,7 +107,7 @@ int solve(vector< vector<int> >& dp, int i,int j, vector<int>& A, vector<int>& B
     bool notZero = (i != 0 and j != 0);
 
     if(A[j] == B[i] and notZero){
-        return dp[i][j] = solve(dp,i,j-1,A,B);
+        return dp[i][j] = solve(dp, i-1, j-1, A, B);
     }
 
     if(i == 0 and j == 0){
@@ -137,6 +139,8 @@ int solve(vector< vector<int> >& dp, int i,int j, vector<int>& A, vector<int>& B
         return dp[i][j] = getMin(a,b,c);
 
     }
+
+    return dp[B.size()][A.size()];
 }
 
 
