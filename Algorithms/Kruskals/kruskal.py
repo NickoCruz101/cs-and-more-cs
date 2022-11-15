@@ -14,6 +14,7 @@ class Graph:
         return self.find(parent, parent[i])
 
     def apply_union(self, parent, rank, x, y):
+        print("rank: ", rank)
         xroot = self.find(parent, x)
         yroot = self.find(parent, y)
         print("xroot, yroot", xroot, yroot)
