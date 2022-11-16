@@ -6,4 +6,4 @@ Label all vertices adjacent to $v_s$ as the weights of their edges. If their is 
 For each vertex we add the weights of the paths that have been traversed and assign it to that vertex. If there are two paths from the source position that reach a vertex then we take the smaller weight and assign it to that vertex.
 
 Avoid updating path lengths of already visited vertices.
-After each iteration, we pick the unvisited vertex with the least path length. 
+After each iteration, we pick the unvisited vertex with the least path length.
