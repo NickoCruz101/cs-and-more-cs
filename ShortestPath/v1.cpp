@@ -15,6 +15,15 @@ public:
         this->t_dist = {};
     };
 
+
+
+    void output_t_dist(){
+        for(int i = 0; i < this->t_dist.size(); i++){
+            cout << t_dist[i] << ", ";
+        }
+        cout << endl;
+    }
+
 };
 
 int main(){
@@ -34,9 +43,10 @@ int main(){
     // assigns tentative distances to infinity
     // when i == s we assign that value to 0
     for(int i = 0; i < n; i++){
-        G.t_dist.push_back(0); 
+        G.t_dist.push_back(inf); 
     }
 
+    G.t_dist[s] = 0;
 
 
 
