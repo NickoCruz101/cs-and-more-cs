@@ -4,7 +4,8 @@
 
 using namespace std;
 
-// Kruskals algorithm
+// Raw
+
 
 struct Edge{
     int u,v,w;
