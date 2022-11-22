@@ -44,7 +44,7 @@ int main(){
 
 }
 
-void printMatrix(vector<vector<int>> N){
+void printMatrix(vector< vector<int> > N){
     cout<< endl;
     for(int i = 0; i < N.size(); i++){
         vector<int> row = N[i];
