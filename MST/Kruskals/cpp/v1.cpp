@@ -12,6 +12,12 @@ struct Edge{
         return this->w;
     }
 
+    bool operator==(const Edge& other) const{
+        return(u == other.u && v == other.v && w == other.w);
+    }
+
+
+
 };
 
 struct Q{
@@ -30,20 +36,35 @@ struct Q{
                 e = E[i];
             }
         }
-
+        remove_Edge(e);
         return e;
+    }
+
+    void remove_Edge(Edge& e){
+        vector<Edge> new_E;
+        for(int i = 0; i < this->E.size(); i++){
+            if(E[i] == e){
+                continue;
+            }
+            new_E.push_back(E[i]);
+        }
+
+        this->E = new_E;
     }
 };
 
 bool isValid(vector<bool>& ,Edge& );
-vector<bool> visited;
+//vector<bool> visited;
+
 int main(){
-    //vector<bool> visited = {true,true,true,true};
+    vector<bool> visited = {true,true,true,true};
     Edge e1(1,2,5);
     Edge e2(1,3,2);
     Edge e3(1,0,4);
 
     vector<Edge> E = {e1,e2,e3};
+
+
 
     Q q(E);
 
@@ -55,6 +76,12 @@ int main(){
         if(isValid(visited,E[i])){
             cout<< "valid edge: "<< e.u << " "<< e.v<<" "<<e.w<< endl;
         }
+    }
+
+    for(int i = 0; i < q.E.size(); i++){
+        Edge e = q.E[i];
+
+        cout<< e.u << ", "<< e.v<< ", "<< e.w<< endl;
     }
 
 
