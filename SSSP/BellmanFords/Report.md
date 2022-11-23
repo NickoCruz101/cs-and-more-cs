@@ -2,6 +2,16 @@
 
 ## A. SSSP
 
+Implementing Bellman's Ford algorithm (Bottom-up) with a time complexity of $O(VE)$
+
+Given $n$ vertices
+
+$Let T = \{ \text{ tentative distances }\}$.
+We assign the tentative distances to all vertices as $\infty$, except for our starting vertex $s$, $T[s] = 0$.
+
+We will loop through the edges $n-1$ times and relax each edge
+$(u,v)$. If $T[v] > T[u] + w_{uv}$ then update $T[v] = T[u] + w_{uv}$. Where $w_{uv} is the weight of edge $(u,v)$
+
 ## B. Minimum Spanning Tree
 
 ### Submission id: 182193870
