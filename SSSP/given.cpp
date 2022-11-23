@@ -1,10 +1,9 @@
-
 #include <iostream>
 #include <limits>
 
 using namespace std;
 // Number of vertices in the graph
-
+#define V 9
 
 // A utility function to find the vertex with minimum
 // distance value, from the set of vertices not yet included
